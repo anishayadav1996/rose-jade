@@ -22,6 +22,7 @@ export default function App() {
           <Route path="/faq" element={<Faq/>} />
         </Routes>
         {/* <Footer /> */}
+        {/* this for testing */}
       </Router>
     </div>
   )
