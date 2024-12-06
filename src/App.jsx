@@ -1,5 +1,5 @@
 import Header from './components/common/header.jsx';
-//import Footer from './components/common/footer.jsx';
+import Footer from './components/common/footer.jsx';
 import Home from './components/pages/Home.jsx';
 import About from './components/pages/About.jsx';
 import Contact from './components/pages/Contact.jsx';
@@ -21,7 +21,7 @@ export default function App() {
           <Route path="/privacy-policy" element={< Privacy />} />
           <Route path="/faq" element={<Faq/>} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
         {/* this for testing */}
       </Router>
     </div>

@@ -4,7 +4,7 @@ import About from './home/About'
 import Service from './home/Service'
 import Financial from './home/Financial'
 import Clients from './home/Clients'
-import Insights from './home/Insights'
+// import Insights from './home/Insights'
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
       <Service/>
       <Financial/>
       <Clients/>
-      <Insights/>
+      {/* <Insights/> */}
     </div>
 
   )

@@ -13,7 +13,7 @@ export default {
       xxl: '1536px',
     },
     colors: {
-      'primary': '#cd2122',
+      'primary': '#d44467',
       'secondary': '#3e8856  ',
       'secondary-light':'#46db77 ',
       'white': '#FFFFFF',
@@ -24,7 +24,7 @@ export default {
       'brown':'#2F2F2F'
     },
     fontSize: {
-      'h1': '64px',    
+      'h1': '54px',    
       'h2': '40px',  
       'h3': '32px',  
       'h4': '24px',    
