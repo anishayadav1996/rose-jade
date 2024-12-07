@@ -6,7 +6,7 @@ export default function Clients() {
             {/* <div className='container mx-auto px-16 py-5 sm:mt-3  text-white'> */}
             <div className='container mx-auto xl:px-16 py-5  mt-5 lg:mb-96 sm:mb-16'>
                 <div className='text-center'>
-                <h2 className="capitalize text-h2 mb-7 ">
+                <h2 className="capitalize text-h2 mb-7 text-white">
                 words of trust testimonials <br />
                         <p className='font-bold text-primary text-h1 leading-[60px]'>from Satisfied clients</p>
                     </h2>

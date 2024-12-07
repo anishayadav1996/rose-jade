@@ -16,7 +16,7 @@ export default function Financial() {
                         <img class="w-full rounded-lg" src="src/assets/img/3.jpg" alt="developer" />
                         <div className="px-6 py-4">
                             <p className="text-gray-dark text-h4 leading-6">Usha Singh</p>
-                            <span className='text-gray-dark leading-8'>Full Stack Web Developer</span>
+                            <span className='text-gray-dark leading-8 text-6'>Full Stack Web Developer</span>
 
                         </div>
                     </div>
@@ -24,7 +24,7 @@ export default function Financial() {
                         <img class="w-full rounded-lg" src="src/assets/img/19.jpg" alt="Sunset in the mountains" />
                         <div className="px-6 py-4">
                             <p className="text-gray-dark text-h4 leading-6">Leeza Rai</p>
-                            <span className='text-gray-dark leading-8'>Case Manager</span>
+                            <span className='text-gray-dark leading-8 text-6'>Case Manager</span>
 
                         </div>
                     </div>
@@ -32,14 +32,14 @@ export default function Financial() {
                         <img class="w-full rounded-lg" src="src/assets/img/7.jpg" alt="Sunset in the mountains" />
                         <div className="px-6 py-4">
                             <p className="text-gray-dark text-h4 leading-6">Raveena Tandon</p>
-                            <span className='text-gray-dark leading-8'>Digital Marketing Intern</span>
+                            <span className='text-gray-dark leading-8 text-6'>Digital Marketing Intern</span>
                         </div>
                     </div>
                     <div className="max-w-sm bg-white">
                         <img class="w-full  rounded-lg" src="src/assets/img/8.jpg" alt="Sunset in the mountains" />
                         <div className="px-6 py-4">
                             <p className="text-gray-dark text-h4 leading-6">Janmejaya Singh Chauhan</p>
-                            <span className='text-gray-dark leading-8'>Project Manager</span>
+                            <span className='text-gray-dark leading-8 text-6'>Project Manager</span>
                         </div>
                     </div>
                 </div>

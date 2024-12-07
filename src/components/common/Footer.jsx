@@ -13,7 +13,7 @@ export default function footer() {
                                     <img src="src/assets/img/Web_Logo_BW Logo_Web Logo BW.png" className="h-14 me-4" alt="rose-jade-footer Logo" />
                                     {/* <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">Rose Jade</span> */}
                                 </Link>
-                                <p className='py-5'>At Rosejade, we are committed to empowering small businesses with innovative funding solutions like Merchant Cash Advances (MCA) and tailored financial strategies. Your success is our mission.</p>
+                                <p className='py-5 text-h5 text-justify'>At Rosejade, we are committed to empowering small businesses with innovative funding solutions like Merchant Cash Advances (MCA) and tailored financial strategies. Your success is our mission.</p>
                             </div>
                             <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 xl:px-16">
                                 <div>  <h2 className="mb-6 text-sm font-semibold  uppercase ">Pages</h2>
@@ -21,8 +21,11 @@ export default function footer() {
                                         <li className="mb-4">
                                             <Link href="/" className="hover:text-secondary ">Home</Link>
                                         </li>
-                                        <li>
-                                            <Link to="/" className="hover:text-secondary ">About</Link>
+                                        <li className="mb-4">
+                                            <Link to="/about" className="hover:text-secondary ">About Us</Link>
+                                        </li>
+                                        <li className="mb-4">
+                                            <Link to="/contact" className="hover:text-secondary ">Contact Us</Link>
                                         </li>
                                     </ul></div>
                                 <div>
@@ -40,10 +43,10 @@ export default function footer() {
                                     <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">Policy</h2>
                                     <ul className="text-gray-500 dark:text-gray-400 font-medium">
                                         <li className="mb-4">
-                                            <Link to="/" className="hover:text-secondary ">Privacy Policy</Link>
+                                            <Link to="/privacy-policy" className="hover:text-secondary ">Privacy Policy</Link>
                                         </li>
                                         <li>
-                                            <Link to="/" className="hover:text-secondary ">Terms &amp; Conditions</Link>
+                                            <Link to="/terms-conditions" className="hover:text-secondary ">Terms &amp; Conditions</Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -54,7 +57,7 @@ export default function footer() {
                     </div>
 
                 </footer>
-                <div className='absolute bottom-[85%]  left-[15%] right-[17%] '>
+                {/* <div className='absolute bottom-[85%]  left-[15%] right-[17%] '>
                     <div className=" rounded lg:flex items-center gap-4 bg-primary text-white px-6 py-4 xl:px-16 ">
                         <div><h1 className='capitalize font-bold sm:text-h2 md:text-h3 lg:text-h2 xl:leading-[60px] sm:text-5 sm:leading-[60px] md:py-16'>Contact Us for a customized financial plan</h1></div>
                         <div className='py-10 '>
@@ -68,7 +71,7 @@ export default function footer() {
                         </div>
 
                     </div>
-                </div>
+                </div> */}
             </div>
 
         </>
