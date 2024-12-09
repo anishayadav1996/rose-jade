@@ -11,7 +11,7 @@ export default function Financial() {
                     </h2>
                     {/* <p className='text-h5 w-70'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br />Mollitia enim quam cumque reprehenderit ullam! Maiores aspernatur officia </p> */}
                 </div>
-                <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-6 my-5 text-center py-5">
+                <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-12 my-5 text-center py-5 ">
                     <div className="max-w-sm  bg-white">
                         <img class="w-full rounded-lg" src="src/assets/img/3.jpg" alt="developer" />
                         <div className="px-6 py-4">

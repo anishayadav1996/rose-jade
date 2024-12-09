@@ -14,7 +14,7 @@ export default function Services() {
       <div className='container mx-auto xl:px-16 py-5  mt-5 lg:mb-96 sm:mb-96'>
         {/* <div className='container mx-auto text-white py-5 mt-10'> */}
           <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 my-5 text-center py-5 ">
-            <div className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white">
+            <div className=" rounded-lg overflow-hidden shadow-lg bg-white">
               <div className="px-6 py-8">
                 <i className="fas fa-money-check text-primary text-h1"></i>
                 <h2 className='text-secondary-light text-5 mt-3 font-bold'>Business Cash Advance</h2>
@@ -23,7 +23,7 @@ export default function Services() {
                 </p>
               </div>
             </div>
-            <div className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white">
+            <div className=" rounded-lg overflow-hidden shadow-lg bg-white">
               <div className="px-6 py-8">
                 <i className="far fa-credit-card text-primary text-h1"></i>
                 <h2 className='text-secondary-light text-5 mt-3 font-bold'>Line of Credit</h2>
@@ -32,7 +32,7 @@ export default function Services() {
                 </p>
               </div>
             </div>
-            <div className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white">
+            <div className=" rounded-lg overflow-hidden shadow-lg bg-white">
               <div className="px-6 py-8">
               <i className="fa-solid fa-microchip text-primary text-h1"></i>
                 
@@ -42,7 +42,7 @@ export default function Services() {
                 </p>
               </div>
             </div>
-            <div className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white">
+            <div className=" rounded-lg overflow-hidden shadow-lg bg-white">
               <div className="px-6 py-8">
                 <i className="fas fa-mail-bulk text-primary text-h1"></i>
                 <h2 className='text-secondary-light text-5 mt-3 font-bold'>Financial & Operational Support</h2>
@@ -51,7 +51,7 @@ export default function Services() {
                 </p>
               </div>
             </div>
-            <div className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white">
+            <div className=" rounded-lg overflow-hidden shadow-lg bg-white">
               <div className="px-6 py-8">
                 <i className="fas fa-envelope-open-text text-primary text-h1"></i>
                 <h2 className='text-secondary-light text-5 mt-3 font-bold'>Digital Marketing & Branding</h2>
@@ -60,7 +60,7 @@ export default function Services() {
                 </p>
               </div>
             </div>
-            <div className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white">
+            <div className=" rounded-lg overflow-hidden shadow-lg bg-white">
               <div className="px-6 py-8">
               <i className="fas fa-book text-primary text-h1"></i>
                 <h2 className='text-secondary-light text-5 mt-3 font-bold'>Business Equipment Financing</h2>

@@ -10,7 +10,7 @@ export default function Faq() {
   return (
     <div className="bg-white">
       {/* <div className='container mx-auto xl:px-16 pb-1  mt-5 lg:mb-96 sm:mb-16'> */}
-      <div className="container mx-auto px-16 lg:mb-96">
+      <div className="xl:container  px-6 lg:px-16 mx-auto lg:mb-96">
         <h2 className=" font-bold  py-6 text-h3 ">Frequently Asked Questions</h2>
         <div className="space-y-4 pb-8">
           {/* Accordion Item 1 */}

@@ -10,16 +10,16 @@ export default function Service() {
       };
     return (
         <div className='bg-secondary'>
-            <div className='container mx-auto px-16 text-white py-5 mt-10'>
+             <div className="xl:container px-6 lg:px-16 mx-auto py-20">
                 <div className='text-center'>
-                    <h2 className="capitalize text-h2 mb-7">
+                    <h2 className="capitalize text-h2 text-white">
                         our services for <br />
                         <p className='font-bold text-primary text-h1 leading-[60px]'>financial success</p>
                     </h2>
                     {/* <p className='text-h5 w-70'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br/>Mollitia enim quam cumque reprehenderit ullam! Maiores aspernatur officia </p> */}
                 </div>
-                <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 my-5 text-center py-5 ">
-                    <div className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-12 my-5 text-center py-5 ">
+                    <div className=" rounded-lg overflow-hidden shadow-lg bg-white">
                         <div className="px-6 py-8">
                             <i className="fas fa-money-check text-primary text-h1"></i>
                             <h2 className='text-secondary-light text-5 mt-3 font-bold'>Business Cash Advance</h2>
@@ -28,7 +28,7 @@ export default function Service() {
                             </p>
                         </div>
                     </div>
-                    <div className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white">
+                    <div className=" rounded-lg overflow-hidden shadow-lg bg-white">
                         <div className="px-6 py-8">
                             <i className="far fa-credit-card text-primary text-h1"></i>
                             <h2 className='text-secondary-light text-5 mt-3 font-bold'>Line of Credit</h2>
@@ -37,7 +37,7 @@ export default function Service() {
                             </p>
                         </div>
                     </div>
-                    <div className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-white">
+                    <div className=" rounded-lg overflow-hidden shadow-lg bg-white">
                         <div className="px-6 py-8">
                             <i className="fas fa-book text-primary text-h1"></i>
                             <h2 className='text-secondary-light text-5 mt-3 font-bold'>Business Equipment Financing</h2>

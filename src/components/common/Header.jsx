@@ -24,6 +24,12 @@ export default function Navbar() {
     setActiveLink(path);
     closeMenu();
   };
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
 
   return (
     <nav className="bg-white sticky top-0 py-1 sm:py-0 z-50 shadow-md  ">
@@ -58,6 +64,7 @@ export default function Navbar() {
       <div className="hidden sm:block">
         <div className="flex items-center justify-between p-6 lg:px-8">
           {/* Logo */}
+          <Link  to ="/" onClick={scrollToTop}>
           <div className="flex shrink-0 items-center md:block lg:block">
             <img
               className="h-14 w-auto"
@@ -65,6 +72,8 @@ export default function Navbar() {
               alt="logo"
             />
           </div>
+                    </Link>
+       
 
           {/* Desktop Links */}
           <div className="ml-auto hidden md:block">

@@ -1,23 +1,37 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Joinourteam() {
-    return (
-        <div className=''>
-            <div className="container px-16 mx-auto py-20">
-                <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 rounded-lg overflow-hidden shadow-lg px-4">
-                    <div className=''>
-                        <h1 className='capitalize text-h2 sm:text-h6 md:text-h5 lg:text-h2 xl:leading-[60px] sm:text-5 sm:leading-[60px] pb-4 font-bold'>Join Our Network</h1>
-                        <p className='lg:text-h5 lg:leading-8 sm:leading:4 md:leading-2 sm:text-h6 text-center'>At Rose Jade, we believe in the power of connection, creativity, and community. Joining our network isn’t just about signing up—it’s about becoming part of a movement that values individuality, innovation, and shared growth.</p>
-                    </div>
-                    <div className='lg:py-24 lg:px-24 sm:px-16 sm:py-16'>
-                        <button class=" bg-primary hover:bg-secondary  px-16 py-2 rounded-full cursor-pointer text-white transition-all duration-500">
-                            Get Started
-                        </button>
-                     
-                    </div>
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    };
 
+    return (
+        <div className="">
+            <div className="xl:container mx-auto px-4 sm:px-6 lg:px-16 py-16 lg:py-20">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 rounded-lg overflow-hidden shadow-lg bg-white">
+                    <div className="p-6 lg:p-12">
+                        <h1 className=" sm:text-h3 lg:text-h2 font-bold mb-4">
+                            Join Our Network
+                        </h1>
+                        <p className="sm:text-h5   lg:text-xl text-justify">
+                            At Rose Jade, we believe in the power of connection, creativity, and community. Joining our network isn’t just about signing up—it’s about becoming part of a movement that values individuality, innovation, and shared growth.
+                        </p>
+                    </div>
+                    <div className="flex justify-center items-center p-6 lg:p-12">
+                        <Link
+                            onClick={scrollToTop}
+                            to="/contact"
+                            className="inline-block bg-primary text-white  font-semibold hover:border border-primary hover:bg-white hover:text-primary py-3 px-6 rounded transition duration-300 ease-in-out"
+                        >
+                            Get Started
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }

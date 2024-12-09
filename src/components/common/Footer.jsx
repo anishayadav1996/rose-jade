@@ -5,39 +5,43 @@ export default function footer() {
     return (
         <>
             <div className="relative bottom-0 bg-brown">
-                <footer className="container xl:px-16 mx-auto">
-                    <div className=" mx-auto px-16  py-24">
-                        <div className="grid grid-cols-2 gap-12 text-white">
+                <footer className="xl:container lg:px-16 mx-auto px-6 ">
+                    <div className=" mx-auto px-16  pt-12 bottom-0">
+                        <div className="grid md:grid-cols-2 sm:grid-cols-1 lg:gap-12 md:lg-5 my-5 text-center py-5 text-white">
                             <div className="mb-6 md:mb-0">
-                                <Link to="/" className="flex items-center">
+                                <Link to="/" className="flex">
                                     <img src="src/assets/img/Web_Logo_BW Logo_Web Logo BW.png" className="h-14 me-4" alt="rose-jade-footer Logo" />
                                     {/* <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">Rose Jade</span> */}
                                 </Link>
                                 <p className='py-5 text-h5 text-justify'>At Rosejade, we are committed to empowering small businesses with innovative funding solutions like Merchant Cash Advances (MCA) and tailored financial strategies. Your success is our mission.</p>
                             </div>
-                            <div class="grid grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
+                            <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 lg:gap-12 my-5 md:gap-8 text-center py-5 ">
                                 <div>  <h2 className="mb-6 text-sm font-semibold  uppercase ">Quick Links</h2>
                                     <ul className="font-medium">
                                         <li className="mb-4">
-                                            <Link href="/" className="hover:text-secondary ">Home</Link>
+                                            <Link href="/" className="hover:text-secondary text-h5 ">Home</Link>
                                         </li>
                                         <li className="mb-4">
-                                            <Link to="/about" className="hover:text-secondary ">About Us</Link>
+                                            <Link to="/about" className="hover:text-secondary text-h5">About Us</Link>
                                         </li>
                                         <li className="mb-4">
-                                            <Link to="/contact" className="hover:text-secondary ">Contact Us</Link>
+                                            <Link to="/service" className="hover:text-secondary text-h5">Services</Link>
                                         </li>
+                                        <li className="mb-4">
+                                            <Link to="/contact" className="hover:text-secondary text-h5">Contact Us</Link>
+                                        </li>
+
                                     </ul></div>
                                 <div>
-                                    <h2 className="mb-6 text-sm font-semibold  uppercase ">Services</h2>
+                                    {/* <h2 className="mb-6 text-sm font-semibold  uppercase ">Services</h2>
                                     <ul className=" font-medium">
                                         <li className="mb-4">
-                                            <Link to="/" className="hover:text-secondary ">Service 1</Link>
+                                            <Link to="/" className="hover:text-secondary text-h5">Service 1</Link>
                                         </li>
                                         <li>
-                                            <Link to="/" className="hover:text-secondary ">Service 2</Link>
+                                            <Link to="/" className="hover:text-secondary text-h5">Service 2</Link>
                                         </li>
-                                    </ul>
+                                    </ul> */}
                                 </div>
                                 <div>
                                     <h2 className="mb-6 text-sm font-semibold  uppercase ">Legal & Compliance</h2>
@@ -65,7 +69,7 @@ export default function footer() {
                             <form className="max-w-lg py-3">
                                 <div className="flex my-2 relative ">
                                     <input className=" block lg:w-full  mb:w-30 sm:w-[80%] sm:text-h5 border placeholder:text-h6 md:placeholder:text-h5  border-white rounded-full h-10 px-4" type="text" placeholder="Your Email Address..." />
-                                    <input className="bg-secondary absolute lg:right-0 lg:h-10 bottom-0 top-0  sm:right-20 sm:h-10 0 rounded-full lg:w-40 sm:w-30 " type="submit" Value='subscription' />
+                                    <input className="bg-secondary absolute lg:right-0 lg:h-10 bottom-0 top-0  rounded-full lg:w-40 sm:w-30 " type="submit" Value='subscription' />
                                 </div>
                             </form>
                         </div>
