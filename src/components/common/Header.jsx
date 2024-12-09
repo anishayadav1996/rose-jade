@@ -1,9 +1,16 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("/");
+  const location = useLocation();
+
+  useEffect(() => {
+    // Update active link based on current location
+    setActiveLink(location.pathname);
+  }, [location.pathname]);
+
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -19,11 +26,11 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-white sticky top-0 z-50 shadow-md  ">
-    <div className="container mx-auto ">
+    <nav className="bg-white sticky top-0 py-1 sm:py-0 z-50 shadow-md  ">
+    <div className="md:container mx-auto ">
    
       {/* Mobile menu button */}
-      <div className="fixed top-0 right-0 flex items-center sm:hidden p-4 z-50">
+      <div className="fixed top-0 sm:top-4 right-0 flex items-center md:hidden p-4 z-50">
         <button
           type="button"
           className="rounded-md p-2 text-gray hover:bg-gray hover:text-white focus:outline-none"
@@ -60,12 +67,12 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Links */}
-          <div className="ml-auto">
+          <div className="ml-auto hidden md:block">
             <Link
               to="/"
               onClick={() => handleLinkClick("/")}
-              className={`rounded-md px-3 py-2 text-sm font-medium  ${
-                activeLink === "/" ? "underline decoration-primary " : ""
+              className={`rounded-md px-3 py-1 text-sm font-medium  ${
+                activeLink === "/" ? "border-b-2 border-primary" : ""
               }`}
               aria-current="page"
             >
@@ -74,44 +81,45 @@ export default function Navbar() {
             <Link
               to="/about"
               onClick={() => handleLinkClick("/about")}
-              className={`rounded-md px-3 py-2 text-sm font-medium  ${
-                activeLink === "/about" ? "underline decoration-primary " : ""
+              className={`rounded-md px-3 py-1 text-sm font-medium  ${
+                activeLink === "/about" ? "border-b-2 border-primary" : ""
               }`}
               aria-current="page"
             >
               About Us
             </Link>
             <Link
-              to="/contact"
-              onClick={() => handleLinkClick("/contact")}
-              className={`rounded-md px-3 py-2 text-sm font-medium  ${
-                activeLink === "/contact" ? "underline decoration-primary" : ""
-              }`}
-              aria-current="page"
-            >
-             Contact Us
-            </Link>
-            <Link
               to="/service"
               onClick={() => handleLinkClick("/service")}
-              className={`rounded-md px-3 py-2 text-sm font-medium  ${
-                activeLink === "/service" ? "underline decoration-primary " : ""
+              className={`rounded-md px-3 py-1 text-sm font-medium  ${
+                activeLink === "/service" ? "border-b-2 border-primary" : ""
               }`}
               aria-current="page"
             >
               Services
             </Link>
+            <Link
+              to="/contact"
+              onClick={() => handleLinkClick("/contact")}
+              className={`rounded-md px-3 py-1 text-sm font-medium  ${
+                activeLink === "/contact" ? "border-b-2 border-primary" : ""
+              }`}
+              aria-current="page"
+            >
+             Contact Us
+            </Link>
+           
           </div>
         </div>
       </div>
 
       {/* Mobile Logo */}
       <div className="mobile-logo lg:hidden sm:hidden">
-        <img className="h-12" src="src/assets/img/Logo_01.png" alt="logo" />
+        <img className="h-16" src="src/assets/img/Logo_01.png" alt="logo" />
       </div>
 
       {/* Mobile Menu */}
-      <div className={`sm:hidden ${isMenuOpen ? "block" : "hidden"}`} id="mobile-menu">
+      <div className={`md:hidden ${isMenuOpen ? "block" : "hidden"}`} id="mobile-menu">
         <div className="space-y-1 px-2 pb-3 pt-2">
           <Link
             to="/"

@@ -6,10 +6,10 @@ export default function Privacy() {
       <div className='py-5 bg-secondary'>
         <div className="container mx-auto px-16">
           <p className='text-center text-primary font-bold capitalize text-h1'>Privacy Policy</p>
-          <p className='mb-6 leading-8 text-h5 text-justify text-center text-white'>At Rose Jade Inc., we are committed to protecting your privacy. This Privacy Policy outlines how we collect, use, and safeguard your information when you interact with our website, products, and services. By using our services, you agree to the practices described in this policy.</p>
+          <p className='mb-6 leading-8 text-h5 text-justify  text-white'>At Rose Jade Inc., we are committed to protecting your privacy. This Privacy Policy outlines how we collect, use, and safeguard your information when you interact with our website, products, and services. By using our services, you agree to the practices described in this policy.</p>
         </div>
       </div>
-      <div className="container px-16 mx-auto py-20">
+      <div className="container mx-auto px-16 pt-5 lg:mb-96 sm:mb-16">
         <div className="flex flex-col space-y-5">
           <ul className="">
             <li className='font-bold text-h4'>1. Information We Collect</li>

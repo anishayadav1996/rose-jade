@@ -8,15 +8,15 @@ export default function Contact() {
           <p className='mb-6 leading-8 text-h5 text-justify text-white'>We’d love to hear from you! Whether you have questions, need support, or want to explore how Rose Jade Inc. can help your business thrive, our team is here for you.</p>
         </div>
       </div>
-      <div className="container mx-auto px-16 py-24">
-        <div className="grid grid-cols-2 gap-8">
+      <div className='container mx-auto xl:px-16 py-5  mt-5 lg:mb-96 sm:mb-96'>
+        <div className="grid grid-cols-2 gap-4">
           <div className=''>
           <p className='mb-6 leading-8 text-h5 text-justify'>
               Have a specific question or need more information? Fill out the form below, and we’ll respond as soon as possible:
             </p>
             <ul className="mb-20">
               <li className="flex">
-                <div className="flex h-10 w-10 items-center justify-center rounded bg-primary text-white">
+                <div className="flex h-10 w-10 items-center justify-center rounded bg-secondary text-white">
                 <i className="fa fa-map-marker" aria-hidden="true"></i>
                 </div>
                 <div className="ml-4 mb-4">
@@ -27,7 +27,7 @@ export default function Contact() {
                 </div>
               </li>
               <li className="flex">
-                <div className="flex h-10 w-10 items-center justify-center rounded bg-primary text-white">
+                <div className="flex h-10 w-10 items-center justify-center rounded bg-secondary text-white">
                 <i className="fa fa-phone" aria-hidden="true"></i>
                 </div>
                 <div className="ml-4 mb-4">
@@ -38,7 +38,7 @@ export default function Contact() {
                 </div>
               </li>
               <li className="flex">
-                <div className="flex h-10 w-10 items-center justify-center rounded bg-primary text-white">
+                <div className="flex h-10 w-10 items-center justify-center rounded bg-secondary text-white">
                 <i class="fa-solid fa-clock"></i>
                 </div>
                 <div className="ml-4 mb-4">
@@ -51,7 +51,7 @@ export default function Contact() {
             </ul>
           </div>
           <div className=''>
-          <p className='mb-6 leading-8 text-h5 text-justify font-bold'>Ready to Get Started?</p>
+          <p className='mb-6 leading-8 text-h4 text-justify font-bold'>Ready to Get Started?</p>
             <form className="" id="contactForm">
               <div className="mb-6">
                 <div className="mx-0 mb-1 sm:mb-4">
@@ -70,7 +70,7 @@ export default function Contact() {
                 </div>
               </div>
               <div className="text-center">
-                <button type="submit" className="w-full bg-primary text-white px-6 py-3 font-xl rounded-md sm:mb-0">Send Message</button>
+                <button type="submit" className="w-full bg-secondary text-white px-6 py-3 font-xl rounded-md sm:mb-0">Send Message</button>
               </div>
             </form>
           </div>

@@ -6,10 +6,10 @@ export default function Terms() {
       <div className='py-5 bg-secondary'>
         <div className="container mx-auto px-16">
           <p className='text-center text-primary font-bold capitalize text-h1'>Terms and Conditions</p>
-          <p className='mb-6 leading-8 text-h5 text-justify text-center text-white'>Welcome to Rose Jade Inc. These Terms and Conditions govern your use of our website, services, and any interactions you have with us. By accessing or using our services, you agree to comply with these terms. If you do not agree, please refrain from using our services.</p>
+          <p className='mb-6 leading-8 text-h5 text-justify  text-white'>Welcome to Rose Jade Inc. These Terms and Conditions govern your use of our website, services, and any interactions you have with us. By accessing or using our services, you agree to comply with these terms. If you do not agree, please refrain from using our services.</p>
         </div>
       </div>
-      <div className="container px-16 mx-auto py-20">
+      <div className="container mx-auto px-16 pt-10 lg:mb-96 sm:mb-16">
         <div className="flex flex-col space-y-5">
           <ul className="">
             <li className='font-bold text-h4'>1. Acceptance of Terms</li>

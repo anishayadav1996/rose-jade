@@ -4,7 +4,7 @@ export default function Abouthero() {
   return (
     <>
         <div className='text-white py-5 bg-secondary'>
-            <div className="container mx-auto px-16">
+           <div className="container px-16 mx-auto py-2">
                 <div className="mx-auto grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 my-10 md:gap-8">
                     <div className="py-5 flex items-center">
                         <div className=''>
