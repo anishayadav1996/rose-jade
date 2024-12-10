@@ -9,9 +9,8 @@ export default function Faq() {
 
   return (
     <div className="bg-white">
-      {/* <div className='container mx-auto xl:px-16 pb-1  mt-5 lg:mb-96 sm:mb-16'> */}
-      <div className="xl:container  px-6 lg:px-16 mx-auto lg:mb-96">
-        <h2 className=" font-bold  py-6 text-h3 ">Frequently Asked Questions</h2>
+      <div className="xl:container px-6 lg:px-16 mx-auto xl:mb-[15rem] lg:mb-[28rem] md:mb-[32rem] mb-[30rem]  mt-5 py-20 ">
+        <h2 className=" font-bold py-6 text-h3 ">Frequently Asked Questions</h2>
         <div className="space-y-4 pb-8">
           {/* Accordion Item 1 */}
           <div className="border-b-2 border-gray rounded-md">
@@ -98,6 +97,7 @@ export default function Faq() {
               </div>
             )}
           </div>
+          
         </div>
       </div>
 

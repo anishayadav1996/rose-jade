@@ -1,5 +1,70 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [responseMessage, setResponseMessage] = useState("");
+  const [errors, setErrors] = useState({});
+  useEffect(() => {
+    if (responseMessage) {
+      const timer = setTimeout(() => {
+        setResponseMessage("");
+      }, 5000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [responseMessage]);
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+         // Clear specific field error when user types
+         setErrors({
+          ...errors,
+          [e.target.name]: "",
+      });
+  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Validate fields
+    const newErrors = {};
+    if (!formData.name.trim()) newErrors.name = "Name is required.";
+    if (!formData.email.trim()) newErrors.email = "Email is required.";
+    else if (!/\S+@\S+\.\S+/.test(formData.email)) newErrors.email = "Enter a valid email address.";
+    if (!formData.message.trim()) newErrors.message = "Message is required.";
+
+    // If errors exist, set them and stop submission
+    if (Object.keys(newErrors).length > 0) {
+        setErrors(newErrors);
+        return;
+    }
+    try {
+      const response = await fetch("http://localhost/rose-jade/contact.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      const result = await response.json();
+
+      if (result.success) {
+        setResponseMessage(result.message);
+        setFormData({ name: "", email: "", message: "" });
+        setErrors({});
+    } else {
+        setResponseMessage(result.message);
+    }
+} catch (error) {
+    setResponseMessage("Error connecting to the server.");
+}
+};
   return (
     <>
       <div className='py-5 bg-secondary'>
@@ -8,8 +73,8 @@ export default function Contact() {
           <p className='mb-6 leading-8 text-h5 text-justify text-white'>We’d love to hear from you! Whether you have questions, need support, or want to explore how Rose Jade Inc. can help your business thrive, our team is here for you.</p>
         </div>
       </div>
-      <div className='container mx-auto xl:px-16 py-5 px-6  mt-5 lg:mb-96 sm:mb-96'>
-        <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-12 my-5  py-5 ">
+      <div className="xl:container px-6 lg:px-16 mx-auto xl:mb-[15rem] md:mb-[30rem] mb-[30rem] mt-5">
+        <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 lg:gap-12 my-5  py-5 ">
           <div className=''>
             <p className='mb-6 leading-8 text-h5 text-justify'>
               Have a specific question or need more information? Fill out the form below, and we’ll respond as soon as possible:
@@ -51,29 +116,61 @@ export default function Contact() {
             </ul>
           </div>
           <div className=''>
-            <p className='mb-6 leading-8 text-h4 text-justify font-bold'>Ready to Get Started?</p>
-            <form className="" id="contactForm">
-              <div className="mb-6">
-                <div className="mx-0 mb-1 sm:mb-4">
-                  <div className="mx-0 mb-1 sm:mb-4">
-                    <label for="name" className="pb-1 text-xs uppercase "></label>
-                    <input type="text" id="name" autocomplete="given-name" placeholder="Your name" className="mb-2 w-full rounded-md border border-gray py-2 pl-2 pr-4 shadow-md text-gray sm:mb-0" name="name" />
-                  </div>
-                  <div class="mx-0 mb-1 sm:mb-4">
-                    <label for="email" className="pb-1 text-xs uppercase "></label>
-                    <input type="email" id="email" autocomplete="email" placeholder="Your email address" className="mb-2 w-full rounded-md border border-gray py-2 pl-2 pr-4 shadow-md text-gray sm:mb-0" name="email" />
-                  </div>
-                </div>
-                <div className="mx-0 mb-1 sm:mb-4">
-                  <label for="textarea" className="pb-1 text-xs uppercase "></label>
-                  <textarea id="textarea" name="textarea" cols="30" rows="5" placeholder="Write your message..." className="mb-2 w-full rounded-md border border-gray py-2 pl-2 pr-4 shadow-md text-gray sm:mb-0"></textarea>
-                </div>
-              </div>
-              <div className="text-center">
-                <button type="submit" className="w-full border border-secondary text-secondary px-6 py-3 font-xl rounded-md sm:mb-0 hover:text-primary">Send Message</button>
-              </div>
-            </form>
-          </div>
+
+            <p className='mb-6 leading-6 text-h4 text-justify font-bold'>Ready to Get Started?</p>
+            <form className="" id="contactForm" onSubmit={handleSubmit}>
+                            <div className="mb-6">
+                                <div className="mx-0 mb-1 sm:mb-4">
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        autoComplete="given-name"
+                                        placeholder="Your name"
+                                        onChange={handleChange}
+                                        value={formData.name}
+                                        className="mb-2 w-full rounded-md border border-gray py-2 pl-2 pr-4 shadow-md text-gray sm:mb-0"
+                                        name="name"
+                                    />
+                                    {errors.name && <p className="text-primary text-sm mt-1">{errors.name}</p>}
+                                </div>
+                                <div className="mx-0 mb-1 sm:mb-4">
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        autoComplete="email"
+                                        placeholder="Your email address"
+                                        onChange={handleChange}
+                                        value={formData.email}
+                                        className="mb-2 w-full rounded-md border border-gray py-2 pl-2 pr-4 shadow-md text-gray sm:mb-0"
+                                        name="email"
+                                    />
+                                    {errors.email && <p className="text-primary text-sm mt-1">{errors.email}</p>}
+                                </div>
+                                <div className="mx-0 mb-1 sm:mb-4">
+                                    <textarea
+                                        id="message"
+                                        name="message"
+                                        cols="30"
+                                        rows="5"
+                                        placeholder="Write your message..."
+                                        onChange={handleChange}
+                                        value={formData.message}
+                                        className="mb-2 w-full rounded-md border border-gray py-2 pl-2 pr-4 shadow-md text-gray sm:mb-0"
+                                    ></textarea>
+                                    {errors.message && <p className="text-primary text-sm mt-1">{errors.message}</p>}
+                                </div>
+                            </div>
+                            <div className="text-center">
+                                <button
+                                    type="submit"
+                                    className="w-full border border-secondary text-secondary px-6 py-3 font-xl rounded-md sm:mb-0 hover:text-primary"
+                                >
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                        {responseMessage && <p className="text-center text-secondary mt-4">{responseMessage}</p>}
+                    </div>
         </div>
       </div>
 

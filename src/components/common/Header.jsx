@@ -31,6 +31,7 @@ export default function Navbar() {
     });
   }
 
+
   return (
     <nav className="bg-white sticky top-0 py-1 sm:py-0 z-50 shadow-md  ">
     <div className="md:container mx-auto ">
@@ -83,7 +84,7 @@ export default function Navbar() {
               className={`rounded-md px-3 py-1 text-sm font-medium  ${
                 activeLink === "/" ? "border-b-2 border-primary" : ""
               }`}
-              aria-current="page"
+              aria-current="page" 
             >
               Home
             </Link>

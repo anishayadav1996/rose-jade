@@ -11,10 +11,10 @@ export default function Joinourteam() {
 
     return (
         <div className="">
-            <div className="xl:container mx-auto px-4 sm:px-6 lg:px-16 py-16 lg:py-20">
+            <div className="xl:container mx-auto px-6 lg:px-16 pt-6 lg:py-20">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 rounded-lg overflow-hidden shadow-lg bg-white">
                     <div className="p-6 lg:p-12">
-                        <h1 className=" sm:text-h3 lg:text-h2 font-bold mb-4">
+                        <h1 className=" sm:text-h3 lg:text-h3 font-bold mb-4 text-h4">
                             Join Our Network
                         </h1>
                         <p className="sm:text-h5   lg:text-xl text-justify">
@@ -25,7 +25,7 @@ export default function Joinourteam() {
                         <Link
                             onClick={scrollToTop}
                             to="/contact"
-                            className="inline-block bg-primary text-white  font-semibold hover:border border-primary hover:bg-white hover:text-primary py-3 px-6 rounded transition duration-300 ease-in-out"
+                            className="inline-block bg-primary text-white   hover:border border-primary hover:bg-white hover:text-primary py-3 px-6 rounded-full transition duration-300 ease-in-out"
                         >
                             Get Started
                         </Link>

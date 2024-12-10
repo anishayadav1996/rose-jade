@@ -4,7 +4,7 @@ export default function Ourstory() {
     return (
         <>
             <div className="xl:container px-6 lg:px-16 mx-auto py-20">
-                <h2 className="capitalize lg:text-h1 font-bold text-primary  mb-5 leading-[50px] text-center ">Our Story</h2>
+                <h2 className="capitalize lg:text-h1 font-bold text-primary  mb-5 leading-[50px] text-center text-h3">Our Story</h2>
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-12 my-5 text-center py-5 ">
                     <div className="rounded-lg overflow-hidden shadow-lg bg-white">
                         <div className="py-8">

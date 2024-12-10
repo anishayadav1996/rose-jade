@@ -20,6 +20,7 @@ export default function Clientsays() {
                     slidesToScroll: 1,
                 },
             },
+       
             {
                 breakpoint: 640, // For screens <= 640px
                 settings: {
@@ -42,13 +43,13 @@ export default function Clientsays() {
                     <div className="xl:container px-6 lg:px-16 mx-auto py-10">
                         <Slider {...settings}>
                             <div className="py-6 px-4">
-                                <div className="rounded-lg overflow-hidden shadow-lg bg-white">
+                            <div className="rounded-lg overflow-hidden shadow-lg bg-white h-[450px] flex flex-col justify-between pt-6">
                                     <img
                                         className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 mx-auto rounded-full object-cover object-right-top"
                                         src="src/assets/img/test1.jpg"
                                         alt="Client 1"
                                     />
-                                    <div className="px-4 sm:px-6 pt-4 text-center">
+                                    <div className="px-4 sm:px-6 pt-4 text-center flex-grow">
                                         <p className="text-gray-dark text-sm sm:text-base md:text-lg font-bold">
                                             Emma L
                                         </p>
@@ -64,13 +65,13 @@ export default function Clientsays() {
                                 </div>
                             </div>
                             <div className="py-6 px-4">
-                                <div className="rounded-lg overflow-hidden shadow-lg bg-white">
+                            <div className="rounded-lg overflow-hidden shadow-lg bg-white h-[450px] flex flex-col justify-between pt-6">
                                     <img
                                         className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 mx-auto rounded-full object-cover object-right-top"
                                         src="src/assets/img/test2.jpg"
                                         alt="Client 2"
                                     />
-                                    <div className="px-4 sm:px-6 pt-4 text-center">
+                                    <div className="px-4 sm:px-6 pt-4 text-center flex-grow">
                                         <p className="text-gray-dark text-sm sm:text-base md:text-lg font-bold">
                                             Raj K.
                                         </p>
@@ -86,13 +87,13 @@ export default function Clientsays() {
                                 </div>
                             </div>
                             <div className="py-6 px-4">
-                                <div className="rounded-lg overflow-hidden shadow-lg bg-white">
+                            <div className="rounded-lg overflow-hidden shadow-lg bg-white h-[450px] flex flex-col justify-between pt-6">
                                     <img
                                         className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 mx-auto rounded-full object-cover object-right-top"
                                         src="src/assets/img/test3.jpg"
                                         alt="Client 3"
                                     />
-                                    <div className="px-4 sm:px-6 pt-4 text-center">
+                                    <div className="px-4 sm:px-6 pt-4 text-center flex-grow">
                                         <p className="text-gray-dark text-sm sm:text-base md:text-lg font-bold">
                                             Samantha R.
                                         </p>

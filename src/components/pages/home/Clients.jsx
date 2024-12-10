@@ -18,6 +18,7 @@ const settings = {
                 slidesToScroll: 1,
             },
         },
+   
         {
             breakpoint: 640, // For screens <= 640px
             settings: {
@@ -31,27 +32,27 @@ const settings = {
 export default function Clients() {
     return (
         <div className="bg-secondary">
-            <div className="xl:container mx-auto px-6 lg:px-16 py-5 mt-5 lg:mb-96  sm:mb-[70%]">
+            <div className="xl:container px-6 lg:px-16 mx-auto xl:mb-[20rem] lg:mb-[28rem] md:mb-[32rem] mb-[30rem]  mt-5 py-20 ">
                 <div className="text-center">
-                    <h2 className="capitalize text-h2 mb-7 text-white">
+                    <h2 className="capitalize sm:text-h2  text-h3 mb-7 text-white">
                         words of trust testimonials <br />
-                        <p className="font-bold text-primary text-h1 leading-[60px]">from Satisfied clients</p>
+                        <p className="font-bold text-primary sm:text-h1 text-h2 leading-[60px]">from Satisfied clients</p>
                     </h2>
                 </div>
-                <div className="xl:container px-6 lg:px-16 mx-auto py-10">
+                <div className="xl:container px-6 lg:px-16 mx-auto sm:py-10">
                         <Slider {...settings}>
                             <div className="py-6 px-4">
-                                <div className="rounded-lg overflow-hidden shadow-lg bg-white">
+                                <div className="rounded-lg overflow-hidden shadow-lg bg-white h-[450px] flex flex-col justify-between pt-6">
                                     <img
                                         className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 mx-auto rounded-full object-cover object-right-top"
                                         src="src/assets/img/test1.jpg"
                                         alt="Client 1"
                                     />
-                                    <div className="px-4 sm:px-6 pt-4 text-center">
-                                        <p className="text-gray-dark   font-bold">
+                                    <div className="px-4 sm:px-6 pt-4 text-center flex-grow">
+                                        <p className="text-gray-dark font-bold">
                                             Emma L
                                         </p>
-                                        <span className="text-gray-dark   ">
+                                        <span className="text-gray-dark">
                                             Small Business Owner
                                         </span>
                                         <p className="text-gray-dark text-h5 pt-3 text-justify px-6">
@@ -63,14 +64,14 @@ export default function Clients() {
                                 </div>
                             </div>
                             <div className="py-6 px-4">
-                                <div className="rounded-lg overflow-hidden shadow-lg bg-white">
+                                <div className="rounded-lg overflow-hidden shadow-lg bg-white h-[450px] flex flex-col justify-between pt-6">
                                     <img
                                         className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 mx-auto rounded-full object-cover object-right-top"
                                         src="src/assets/img/test2.jpg"
                                         alt="Client 2"
                                     />
-                                    <div className="px-4 sm:px-6 pt-4 text-center">
-                                        <p className="text-gray-dark  font-bold">
+                                    <div className="px-4 sm:px-6 pt-4 text-center flex-grow">
+                                        <p className="text-gray-dark font-bold">
                                             Raj K.
                                         </p>
                                         <span className="text-gray-dark ">
@@ -85,14 +86,14 @@ export default function Clients() {
                                 </div>
                             </div>
                             <div className="py-6 px-4">
-                                <div className="rounded-lg overflow-hidden shadow-lg bg-white">
+                                <div className="rounded-lg overflow-hidden shadow-lg bg-white h-[450px] flex flex-col justify-between pt-6">
                                     <img
                                         className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 mx-auto rounded-full object-cover object-right-top"
                                         src="src/assets/img/test3.jpg"
                                         alt="Client 3"
                                     />
-                                    <div className="px-4 sm:px-6 pt-4 text-center">
-                                        <p className="text-gray-dark  font-bold">
+                                    <div className="px-4 sm:px-6 pt-4 text-center flex-grow">
+                                        <p className="text-gray-dark font-bold">
                                             Samantha R.
                                         </p>
                                         <span className="text-gray-dark ">
