@@ -34,8 +34,8 @@ export default function Navbar() {
  
 
   return (
-    <nav className="bg-white sticky top-0 py-1 sm:py-0 z-50 shadow-md  ">
-    <div className="md:container mx-auto ">
+    <nav className="bg-white sticky top-0 py-1 sm:py-0 z-50 shadow-md">
+    <div className="md:container mx-auto sm:px-6">
    
       {/* Mobile menu button */}
       <div className="fixed top-0 sm:top-4 right-0 flex items-center md:hidden p-4 z-50">
