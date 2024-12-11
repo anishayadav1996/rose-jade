@@ -10,7 +10,7 @@ export default function Financial() {
                         <p className='font-bold text-primary text-h1 leading-[60px]'>financial Team</p>
                     </h2>
                 </div>
-                <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-12 my-5 text-center py-5 ">
+                <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-12 my-5 text-center py-5 sm:px-6">
                     <div className=" bg-white">
                         <img class="w-full rounded-lg" src="src/assets/img/3.jpg" alt="developer" />
                         <div className="px-6 py-4">

@@ -9,7 +9,7 @@ export default function Services() {
           <p className='mb-6 leading-8 text-h5  text-center text-white'>At Rose Jade Inc., we are dedicated to providing innovative, personalized solutions to help small businesses thrive. Whether you’re just starting or looking to scale, our comprehensive services are designed to meet your unique needs and empower your business to succeed.</p>
         </div>
       </div>
-        <div className="xl:container  px-6 lg:px-16 mx-auto xl:mb-[18rem] md:mb-[30rem] mb-[30rem]  mt-5">
+        <div className="xl:container  px-6 lg:px-16 mx-auto xl:mb-[20rem] md:mb-[30rem] mb-[30rem]  mt-5">
           <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 my-5 text-center py-5 ">
             <div className=" rounded-lg overflow-hidden shadow-lg bg-white">
               <div className="px-6 py-8">

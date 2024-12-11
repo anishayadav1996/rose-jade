@@ -40,7 +40,7 @@ export default function Clientsays() {
                             What Client Says About Us
                         </h2>
                     </div>
-                    <div className="xl:container px-6 lg:px-16 mx-auto py-10">
+                    <div className="xl:container lg:px-16 mx-auto sm:py-10">
                         <Slider {...settings}>
                             <div className="py-6 px-4">
                             <div className="rounded-lg overflow-hidden shadow-lg bg-white h-[450px] flex flex-col justify-between pt-6">

@@ -10,7 +10,7 @@ export default function Service() {
       };
     return (
         <div className='bg-secondary'>
-             <div className="xl:container px-6 lg:px-16 mx-auto py-20">
+             <div className="xl:container px-6 lg:px-16 mx-auto py-20 ">
                 <div className='text-center'>
                     <h2 className="capitalize text-h2 text-white">
                         our services for <br />
@@ -18,7 +18,7 @@ export default function Service() {
                     </h2>
                    
                 </div>
-                <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-12 my-5 text-center py-5 ">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-12 my-5 text-center py-5 sm:px-6">
                     <div className=" rounded-lg overflow-hidden shadow-lg bg-white">
                         <div className="px-6 py-8">
                             <i className="fas fa-money-check text-primary text-h1"></i>

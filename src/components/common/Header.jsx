@@ -31,6 +31,7 @@ export default function Navbar() {
     });
   }
 
+ 
 
   return (
     <nav className="bg-white sticky top-0 py-1 sm:py-0 z-50 shadow-md  ">
@@ -80,7 +81,7 @@ export default function Navbar() {
           <div className="ml-auto hidden md:block">
             <Link
               to="/"
-              onClick={() => handleLinkClick("/")}
+              onClick={() =>{handleLinkClick("/"), scrollToTop()}}
               className={`rounded-md px-3 py-1 text-sm font-medium  ${
                 activeLink === "/" ? "border-b-2 border-primary" : ""
               }`}
@@ -90,8 +91,8 @@ export default function Navbar() {
             </Link>
             <Link
               to="/about"
-              onClick={() => handleLinkClick("/about")}
-              className={`rounded-md px-3 py-1 text-sm font-medium  ${
+              onClick={() => {handleLinkClick("/about") , scrollToTop()}}
+              className={`rounded-md px-3 py-1 text-sm font-medium   ${
                 activeLink === "/about" ? "border-b-2 border-primary" : ""
               }`}
               aria-current="page"
@@ -100,7 +101,7 @@ export default function Navbar() {
             </Link>
             <Link
               to="/service"
-              onClick={() => handleLinkClick("/service")}
+              onClick={() => {handleLinkClick("/service") , scrollToTop()}}
               className={`rounded-md px-3 py-1 text-sm font-medium  ${
                 activeLink === "/service" ? "border-b-2 border-primary" : ""
               }`}
@@ -110,7 +111,7 @@ export default function Navbar() {
             </Link>
             <Link
               to="/contact"
-              onClick={() => handleLinkClick("/contact")}
+              onClick={() => {handleLinkClick("/contact") , scrollToTop()}}
               className={`rounded-md px-3 py-1 text-sm font-medium  ${
                 activeLink === "/contact" ? "border-b-2 border-primary" : ""
               }`}

@@ -68,13 +68,13 @@ export default function Contact() {
   return (
     <>
       <div className='py-5 bg-secondary'>
-        <div className="container mx-auto px-16">
+        <div className="container mx-auto lg:px-16 px-6">
           <p className='text-center text-primary font-bold capitalize text-h1'> get in touch</p>
           <p className='mb-6 leading-8 text-h5 text-justify text-white'>We’d love to hear from you! Whether you have questions, need support, or want to explore how Rose Jade Inc. can help your business thrive, our team is here for you.</p>
         </div>
       </div>
-      <div className="xl:container px-6 lg:px-16 mx-auto xl:mb-[15rem] md:mb-[30rem] mb-[30rem] mt-5">
-        <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 lg:gap-12 my-5  py-5 ">
+      <div className="xl:container  px-6 lg:px-16 mx-auto xl:mb-[20rem] lg:mb-[20rem] ] mb-[30rem]  mt-5">
+        <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 lg:gap-12 my-5  py-5 ">
           <div className=''>
             <p className='mb-6 leading-8 text-h5 text-justify'>
               Have a specific question or need more information? Fill out the form below, and we’ll respond as soon as possible:
@@ -82,7 +82,7 @@ export default function Contact() {
             <ul className="mb-20 ">
               <li className="flex ">
                 <div className="flex h-10 w-10 items-center justify-center rounded border border-secondary text-primary">
-                  <i className="fa fa-map-marker" aria-hidden="true"></i>
+                  <i className="fa fa-map-marker text-h4" aria-hidden="true"></i>
                 </div>
                 <div className="ml-4 mb-4">
                   <h3 className="text-h5 font-medium leading-6 text-gray-dark">Our Address
@@ -93,7 +93,7 @@ export default function Contact() {
               </li>
               <li className="flex">
                 <div className="flex h-10 w-10 items-center justify-center rounded border border-secondary text-primary">
-                  <i className="fa fa-phone" aria-hidden="true"></i>
+                  <i className="fa fa-phone text-h4" aria-hidden="true"></i>
                 </div>
                 <div className="ml-4 mb-4">
                   <h3 className="mb-2 text-h5 font-medium leading-6 text-gray-dark">Contact
@@ -104,7 +104,7 @@ export default function Contact() {
               </li>
               <li className="flex">
                 <div className="flex h-10 w-10 items-center justify-center rounded border border-secondary text-primary">
-                  <i class="fa-solid fa-clock"></i>
+                  <i class="fa-solid fa-clock text-h4"></i>
                 </div>
                 <div className="ml-4 mb-4">
                   <h3 className="mb-2 text-h5 font-medium leading-6 text-gray-dark">Working

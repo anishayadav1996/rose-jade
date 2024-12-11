@@ -3,11 +3,10 @@ import React from 'react'
 function About() {
   return (
     <>
-      <div className="xl:container lg:px-16 sm:px-6 mx-auto py-20">
-        
-        <div className="mx-auto grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-12 ">
+      <div className="xl:container lg:px-16  mx-auto py-20 px-6">
+        <div className="mx-auto grid xl:grid-cols-2 md:grid-cols-1 gap-12 ">
           <div className="flex flex-col space-y-5 px-6">
-          <h2 className="capitalize lg:text-h2 font-bold text-primary text-h3 mb-3 lg:leading-[50px] leading-[50px]">everything you need to know <br />about Rose Jade Inc.</h2>
+          <h2 className="capitalize sm:text-h2 font-bold text-primary text-h3 mb-3 lg:leading-[40px] leading-[50px]">everything you need to know <br />about Rose Jade Inc.</h2>
             <ul>
               <li>
                 <p className='text-secondary text-h4 font-bold'>Mission</p>
@@ -23,7 +22,7 @@ function About() {
               </li>
             </ul>
           </div>
-          <div className="ml-auto px-6"><img className="rounded-lg w-full h-full md:w-full" src=" src/assets/img/about.jpg" alt="right-img" /></div>
+          <div className="px-6"><img className="rounded-lg w-auto h-full  md:w-full" src=" src/assets/img/about-home.jpg" alt="right-img" /></div>
         </div>
       </div>
     </>
