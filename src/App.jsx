@@ -10,7 +10,7 @@ import Privacy from './components/pages/Privacy.jsx';
 import Faq from './components/pages/Faq.jsx';
 import Terms from './components/pages/Terms.jsx';
 import PostsList from './components/PostsList.jsx';
-import AddPostForm from './components/AddPostForm.jsx';
+// import AddPostForm from './components/AddPostForm.jsx';
 
 export default function App() {
   return (
@@ -26,7 +26,7 @@ export default function App() {
           <Route path="/terms-conditions" element={< Terms />} />
           <Route path="/faq" element={<Faq/>} />
           <Route path="/postslist" element={<PostsList/>} />
-          <Route path="/addpost" element={<AddPostForm/>} />
+          {/* <Route path="/addpost" element={<AddPostForm/>} /> */}
         </Routes>
         <Footer />
       </Router>

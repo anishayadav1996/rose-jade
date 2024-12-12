@@ -8,6 +8,11 @@ export default function footer() {
             behavior: "smooth",
         });
     };
+   
+
+    const toggleForm = () => {
+        setIsFormOpen(!isFormOpen);
+    };
     return (
         <>
             <div className="relative bottom-0 bg-brown">
@@ -63,7 +68,6 @@ export default function footer() {
                             </div>
                         </div>
                     </div>
-
                 </footer>
                 <div className='absolute xl:bottom-[85%] left-1 right-1 md:left-[13%] md:right-[6%] lg:bottom-[80%] md:bottom-[86%] bottom-[90%] px-6'>
                     <div className=" rounded lg:flex items-center sm:gap-12 bg-primary text-white px-6 py-4  text-justify lg:px-16">
@@ -89,8 +93,12 @@ export default function footer() {
 
                     </div>
                 </div>
+                <div className='text-white text-h2  right-2 bottom-0 absolute' onClick={toggleForm}>
+                <i class="fa-solid fa-envelope"></i>
+                
+                </div>
+               {/* <IconForm/> */}
             </div>
-
         </>
     )
 }
