@@ -22,7 +22,7 @@ function About() {
               </li>
             </ul>
           </div>
-          <div className="px-6"><img className="rounded-lg w-auto h-full  md:w-full" src=" src/assets/img/about-home.jpg" alt="right-img" /></div>
+          <div className="px-6"><img className="rounded-lg w-auto h-full  md:w-full object-cover object-top" src=" src/assets/img/about-home.jpg" alt="about-img" /></div>
         </div>
       </div>
     </>

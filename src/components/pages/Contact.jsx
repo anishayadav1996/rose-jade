@@ -138,7 +138,7 @@ export default function Contact() {
                                         type="email"
                                         id="email"
                                         autoComplete="email"
-                                        placeholder="Your email address"
+                                        placeholder="Your e-mail address"
                                         onChange={handleChange}
                                         value={formData.email}
                                         className="mb-2 w-full rounded-md border border-gray py-2 pl-2 pr-4 shadow-md text-gray sm:mb-0"

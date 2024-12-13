@@ -20,7 +20,7 @@ export default function Clientsays() {
                     slidesToScroll: 1,
                 },
             },
-       
+
             {
                 breakpoint: 640, // For screens <= 640px
                 settings: {
@@ -36,27 +36,27 @@ export default function Clientsays() {
             <div className="bg-secondary">
                 <div className="xl:container px-6 lg:px-16 mx-auto py-20">
                     <div className="text-center">
-                        <h2 className="capitalize text-h2 mb-7 font-bold hover:text-primary text-white text-lg md:text-2xl lg:text-3xl">
+                        <h2 className="capitalize text-h2 mb-7 font-bold text-white text-lg md:text-2xl lg:text-3xl">
                             What Client Says About Us
                         </h2>
                     </div>
                     <div className="xl:container lg:px-16 mx-auto sm:py-10">
                         <Slider {...settings}>
                             <div className="py-6 px-4">
-                            <div className="rounded-lg overflow-hidden shadow-lg bg-white h-[450px] flex flex-col justify-between pt-6">
+                                <div className="rounded-lg overflow-hidden shadow-lg bg-white h-[450px] flex flex-col justify-between pt-6">
                                     <img
                                         className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 mx-auto rounded-full object-cover object-right-top"
                                         src="src/assets/img/test1.jpg"
                                         alt="Client 1"
                                     />
                                     <div className="px-4 sm:px-6 pt-4 text-center flex-grow">
-                                        <p className="text-gray-dark text-sm sm:text-base md:text-lg font-bold">
+                                        <p className=" text-sm sm:text-base md:text-lg font-bold">
                                             Emma L
                                         </p>
-                                        <span className="text-gray-dark text-xs sm:text-sm md:text-base">
+                                        <span className=" text-xs sm:text-sm md:text-base">
                                             Small Business Owner
                                         </span>
-                                        <p className="text-gray-dark pt-4 text-xs sm:text-sm md:text-base leading-6 text-justify">
+                                        <p className=" pt-4 text-xs sm:text-sm md:text-base leading-6 text-justify">
                                             Rosejade provided the financial support my business needed when traditional banks wouldn’t. Their
                                             Merchant Cash Advance (MCA) solution was fast, hassle-free, and perfectly aligned with my needs.
                                             Highly recommended.
@@ -65,20 +65,20 @@ export default function Clientsays() {
                                 </div>
                             </div>
                             <div className="py-6 px-4">
-                            <div className="rounded-lg overflow-hidden shadow-lg bg-white h-[450px] flex flex-col justify-between pt-6">
+                                <div className="rounded-lg overflow-hidden shadow-lg bg-white h-[450px] flex flex-col justify-between pt-6">
                                     <img
                                         className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 mx-auto rounded-full object-cover object-right-top"
                                         src="src/assets/img/test2.jpg"
                                         alt="Client 2"
                                     />
                                     <div className="px-4 sm:px-6 pt-4 text-center flex-grow">
-                                        <p className="text-gray-dark text-sm sm:text-base md:text-lg font-bold">
+                                        <p className=" text-sm sm:text-base md:text-lg font-bold">
                                             Raj K.
                                         </p>
-                                        <span className="text-gray-dark text-xs sm:text-sm md:text-base">
+                                        <span className=" text-xs sm:text-sm md:text-base">
                                             Entrepreneur
                                         </span>
-                                        <p className="text-gray-dark pt-4 text-xs sm:text-sm md:text-base leading-6 text-justify">
+                                        <p className=" pt-4 text-xs sm:text-sm md:text-base leading-6 text-justify">
                                             Working with Rosejade has been a game-changer for our business. The expert advice and tailored
                                             solutions they offer make them stand out in the financial sector. I couldn’t have asked for a
                                             better funding partner
@@ -87,20 +87,20 @@ export default function Clientsays() {
                                 </div>
                             </div>
                             <div className="py-6 px-4">
-                            <div className="rounded-lg overflow-hidden shadow-lg bg-white h-[450px] flex flex-col justify-between pt-6">
+                                <div className="rounded-lg overflow-hidden shadow-lg bg-white h-[450px] flex flex-col justify-between pt-6">
                                     <img
                                         className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 mx-auto rounded-full object-cover object-right-top"
-                                        src="src/assets/img/test3.jpg"
+                                        src="src/assets/img/text3.jpg"
                                         alt="Client 3"
                                     />
                                     <div className="px-4 sm:px-6 pt-4 text-center flex-grow">
-                                        <p className="text-gray-dark text-sm sm:text-base md:text-lg font-bold">
+                                        <p className=" text-sm sm:text-base md:text-lg font-bold">
                                             Samantha R.
                                         </p>
-                                        <span className="text-gray-dark text-xs sm:text-sm md:text-base">
+                                        <span className=" text-xs sm:text-sm md:text-base">
                                             Founder, Boutique Store
                                         </span>
-                                        <p className="text-gray-dark pt-4 text-xs sm:text-sm md:text-base leading-6 text-justify">
+                                        <p className=" pt-4 text-xs sm:text-sm md:text-base leading-6 text-justify">
                                             I was impressed with how quickly Rosejade processed my funding request. Their Merchant Cash
                                             Advance option gave me the flexibility I needed to manage my cash flow without stress. Thank
                                             you, Rosejade!

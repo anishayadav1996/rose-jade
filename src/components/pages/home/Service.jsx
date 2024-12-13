@@ -23,7 +23,7 @@ export default function Service() {
                         <div className="px-6 py-8">
                             <i className="fas fa-money-check text-primary text-h1"></i>
                             <h2 className='text-secondary-light  mt-3 font-bold'>Business Cash Advance</h2>
-                            <p className="text-gray-dark text-h6 text-justify">
+                            <p className=" text-h6 text-justify leading-6 pt-2">
                                 When you need fast access to cash without the hassle of traditional loans, a Business Cash Advance from Rose Jade Inc. offers the flexibility you need to manage your cash flow. Repayments are tied to your daily sales, making it easy to pay back as you grow.
                             </p>
                         </div>
@@ -32,7 +32,7 @@ export default function Service() {
                         <div className="px-6 py-8">
                             <i className="far fa-credit-card text-primary text-h1"></i>
                             <h2 className='text-secondary-light mt-3 font-bold'>Line of Credit</h2>
-                            <p className="text-gray-dark text-h6 text-justify">
+                            <p className=" text-h6 text-justify leading-6 pt-2">
                                 A revolving line of credit can be a game-changer for your business. Get access to funds whenever you need them with a line of credit from Rose Jade Inc., helping you manage unexpected expenses and support growth initiatives.
                             </p>
                         </div>
@@ -41,7 +41,7 @@ export default function Service() {
                         <div className="px-6 py-8">
                             <i className="fas fa-book text-primary text-h1"></i>
                             <h2 className='text-secondary-light mt-3 font-bold'>Business Equipment Financing</h2>
-                            <p className="text-gray-dark text-h6 text-justify">
+                            <p className=" text-h6 text-justify leading-6 pt-2">
                                 Whether you're purchasing new equipment or upgrading existing machinery, Rose Jade Inc. offers equipment financing options that allow you to acquire the tools you need without depleting your working capital.
                             </p>
                         </div>
