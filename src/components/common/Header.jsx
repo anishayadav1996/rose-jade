@@ -105,6 +105,16 @@ export default function Navbar() {
               >
                 Services
               </Link>
+
+              {/* <Link
+                to="/blog"
+                onClick={() => { handleLinkClick("/blog"), scrollToTop() }}
+                className={`rounded-md px-3 py-1 text-sm font-medium  ${activeLink === "/blog" ? "border-b-2 border-primary" : ""
+                  }`}
+                aria-current="page"
+              >
+               Blog
+              </Link> */}
               <Link
                 to="/contact"
                 onClick={() => { handleLinkClick("/contact"), scrollToTop() }}
@@ -114,6 +124,8 @@ export default function Navbar() {
               >
                 Contact Us
               </Link>
+
+             
 
             </div>
           </div>

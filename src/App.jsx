@@ -7,11 +7,11 @@ import Services from './components/pages/Services.jsx';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import React from 'react';
 import Privacy from './components/pages/Privacy.jsx';
-import Faq from './components/pages/Faq.jsx';
+import Blog from './components/pages/Blog.jsx';
 import Terms from './components/pages/Terms.jsx';
-import PostsList from './components/PostsList.jsx';
+// import PostsList from './components/PostsList.jsx';
 // import AddPostForm from './components/AddPostForm.jsx';
-
+import EditorApp from "./EditorApp";
 export default function App() {
   return (
     <div>
@@ -24,12 +24,15 @@ export default function App() {
           <Route path="/service" element={< Services />} />
           <Route path="/privacy-policy" element={< Privacy />} />
           <Route path="/terms-conditions" element={< Terms />} />
-          <Route path="/faq" element={<Faq/>} />
-          <Route path="/postslist" element={<PostsList/>} />
-          {/* <Route path="/addpost" element={<AddPostForm/>} /> */}
+          <Route path="/blog" element={<Blog/>} />
+          {/* <Route path="/postslist" element={<PostsList/>} /> */}
+          <Route path="/createblog" element={<EditorApp/>} />
+           
         </Routes>
+        {/* <Editor /> */}
         <Footer />
       </Router>
+      
     </div>
   )
 }

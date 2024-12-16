@@ -10,15 +10,15 @@ function About() {
             <ul>
               <li>
                 <p className='text-secondary text-h4 font-bold'>Mission</p>
-                <p className='text-justify pt-2'>At Rose Jade Inc., we are committed to empowering small businesses by providing them with the financial tools they need to thrive. Our mission is to make funding accessible, transparent, and stress-free.</p>
+                <p className='text-justify pt-2 leading-6'>At Rose Jade Inc., we are committed to empowering small businesses by providing them with the financial tools they need to thrive. Our mission is to make funding accessible, transparent, and stress-free.</p>
               </li>
               <li>
                 <p className='text-secondary text-h4 font-bold pt-2'>Vision</p>
-                <p className='text-justify pt-2'>To be the most trusted financial partner for small businesses, offering innovative solutions that simplify growth and drive success.</p>
+                <p className='text-justify pt-2 leading-6'>To be the most trusted financial partner for small businesses, offering innovative solutions that simplify growth and drive success.</p>
               </li>
               <li>
                 <p className='text-secondary text-h4 font-bold pt-2'>Our Story</p>
-                <p className='text-justify pt-2'>TFounded by a passionate team of financial experts and business enthusiasts, Rose Jade Inc. understands the challenges small business owners face when it comes to securing funding. With years of experience in the industry, we’ve dedicated ourselves to providing easy-to-understand funding options that can make a real impact on your business.</p>
+                <p className='text-justify pt-2 leading-6'>TFounded by a passionate team of financial experts and business enthusiasts, Rose Jade Inc. understands the challenges small business owners face when it comes to securing funding. With years of experience in the industry, we’ve dedicated ourselves to providing easy-to-understand funding options that can make a real impact on your business.</p>
               </li>
             </ul>
           </div>
