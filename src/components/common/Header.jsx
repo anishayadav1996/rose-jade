@@ -116,7 +116,7 @@ export default function Navbar() {
                Blog
               </Link> */}
               <Link
-                to="/contact"
+                to="/contact-us"
                 onClick={() => { handleLinkClick("/contact"), scrollToTop() }}
                 className={`rounded-md px-3 py-1 text-sm font-medium  ${activeLink === "/contact" ? "border-b-2 border-primary" : ""
                   }`}

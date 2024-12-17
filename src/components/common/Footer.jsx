@@ -145,7 +145,7 @@ export default function Footer() {
                                             <Link to="/blog" className="hover:text-secondary text-h5" onClick={scrollToTop}>Blog</Link>
                                         </li> */}
                                         <li className="mb-4">
-                                            <Link to="/contact" className="hover:text-secondary text-h5" onClick={scrollToTop}>Contact Us</Link>
+                                            <Link to="/contact-us" className="hover:text-secondary text-h5" onClick={scrollToTop}>Contact Us</Link>
                                         </li>
                                       
                                     </ul>
