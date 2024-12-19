@@ -24,6 +24,12 @@ export default function Blog() {
   const handlePageClick = ({ selected }) => {
     setCurrentPage(selected);
   };
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
 
   return (
     <div className="py-4 mt-5 lg:mb-96 sm:mb-16">
@@ -41,7 +47,7 @@ export default function Blog() {
       {/* Blog Cards */}
       <div className="grid md:grid-cols-3 sm:grid-cols-1 my-5 py-5 gap-4">
         {currentItems.map((item) => (
-          <Link to = {`/blogs/${item.blog_slug}`}>
+          <Link to = {`/blogs/${item.blog_slug}`} onClick={scrollToTop}>
           <div
             className="max-w-sm bg-white hover:shadow-2xl transition-all duration-300 p-2 rounded-xl"
             key={item.blog_id}
@@ -59,10 +65,10 @@ export default function Blog() {
               </div>
             </div>
             <div className="py-4">
-              <span>{item.formatted_date || 'No date available'}</span>
               <p className="text-gray-dark text-h5 text-justify leading-6">
                 {item.blog_title || 'No title available'}
               </p>
+              <i class="fa fa-calendar text-primary py-5" aria-hidden="true"></i><span className='px-2'>{item.formatted_date || 'No date available'}</span>
             </div>
           </div>
           </Link>
@@ -79,6 +85,7 @@ export default function Blog() {
           marginPagesDisplayed={2}
           pageRangeDisplayed={3}
           onPageChange={handlePageClick}
+          onClick={scrollToTop}
           containerClassName={'pagination flex space-x-2'}
           activeClassName={'bg-primary text-white px-3 py-1 border border-primary rounded'}
           pageClassName={

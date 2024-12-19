@@ -3,23 +3,16 @@ import { useSelector, useDispatch } from 'react-redux';
 import { fetchCategories } from '../../redux/categorySlice';
 import { fetchPopularPosts, fetchLatestPosts, fetchRelatedPosts   } from '../../redux/postSlice';
 
+
 function Sidebar({ postId} ) {
   const dispatch = useDispatch();
   const [activeTab, setActiveTab] = useState('recent');
 
   // Access state from the Redux store
   const { categories, status, error } = useSelector((state) => state.categories);
+  // console.log(categories);
   const { popularPosts, latestPosts, relatedPosts } = useSelector((state) => state.posts);
-  // const relatedPosts = useSelector((state) => state.posts.relatedPosts);
-  // const {
-  //   popularPosts,
-  //   latestPosts,
-  //   status: postStatus,
-  //   error: postError,
-  // } = useSelector((state) => state.posts);
 
-  // Tab Data
-  // const posts = activeTab === 'recent' ? latestPosts : popularPosts;
 
     // Determine which posts to display
     const posts =
@@ -40,6 +33,12 @@ function Sidebar({ postId} ) {
     }
   }, [dispatch, activeTab, postId]);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
   return (
     <>
       <div className="w-96 pt-40  z-50">
@@ -74,8 +73,8 @@ function Sidebar({ postId} ) {
               categories.map((category) => (
                 <li key={category.category_id}>
                   <a
-                    href={`category-${category.category_id}`}
-                    className="flex items-center p-2 rounded-lg hover:bg-gray-200"
+                    href={`${category.category_id}`}
+                    className="flex items-center p-2 rounded-lg"
                   >
                     <span className="ms-3">{category.category_name}</span>
                   </a>
@@ -122,8 +121,8 @@ function Sidebar({ postId} ) {
                   />
                   {/* Post Details */}
                   <div>
-                    <h3 className="text-h5  mb-1">{post.blog_title}</h3>
-                    <p>{new Date(post.blog_date).toLocaleDateString()}</p>
+                    <a href ={`/blogs/${post.blog_slug}`} onClick= {scrollToTop}>
+                    <h3 className="text-h5  mb-1">{post.blog_title}</h3></a>
                   </div>
                 </div>
               ))}

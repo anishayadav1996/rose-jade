@@ -124,7 +124,7 @@ export default function Navbar() {
                   }`}
                 aria-current="page"
               >
-               Blog
+               Blogs
               </Link>
 
             </div>
