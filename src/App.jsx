@@ -7,11 +7,9 @@ import Services from './components/pages/Services.jsx';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import React from 'react';
 import Privacy from './components/pages/Privacy.jsx';
-import Blog from './components/pages/Blog.jsx';
 import Terms from './components/pages/Terms.jsx';
-// import PostsList from './components/PostsList.jsx';
-// import AddPostForm from './components/AddPostForm.jsx';
-import EditorApp from "./EditorApp";
+import Blogs from './components/pages/Blogs.jsx';
+import BlogIndividaul from './components/pages/blogs/blogIndividaul.jsx';
 export default function App() {
   return (
     <div>
@@ -19,15 +17,13 @@ export default function App() {
         <Header />
         <Routes>
           <Route exact path="/" element={< Home />} />
-          <Route path="/about" element={< About />} />
+          <Route path="/about-us" element={< About />} />
           <Route path="/contact-us" element={< Contact />} />
           <Route path="/service" element={< Services />} />
           <Route path="/privacy-policy" element={< Privacy />} />
           <Route path="/terms-conditions" element={< Terms />} />
-          <Route path="/blog" element={<Blog/>} />
-          {/* <Route path="/postslist" element={<PostsList/>} /> */}
-          <Route path="/createblog" element={<EditorApp/>} />
-           
+          <Route path="/blogs" element={<Blogs/>} />
+          <Route path="/blogs/:blogSlug" element={<BlogIndividaul/>} />
         </Routes>
         {/* <Editor /> */}
         <Footer />

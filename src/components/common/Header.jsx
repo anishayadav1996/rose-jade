@@ -88,7 +88,7 @@ export default function Navbar() {
                 Home
               </Link>
               <Link
-                to="/about"
+                to="/about-us"
                 onClick={() => { handleLinkClick("/about"), scrollToTop() }}
                 className={`rounded-md px-3 py-1 text-sm font-medium   ${activeLink === "/about" ? "border-b-2 border-primary" : ""
                   }`}
@@ -106,15 +106,7 @@ export default function Navbar() {
                 Services
               </Link>
 
-              {/* <Link
-                to="/blog"
-                onClick={() => { handleLinkClick("/blog"), scrollToTop() }}
-                className={`rounded-md px-3 py-1 text-sm font-medium  ${activeLink === "/blog" ? "border-b-2 border-primary" : ""
-                  }`}
-                aria-current="page"
-              >
-               Blog
-              </Link> */}
+              
               <Link
                 to="/contact-us"
                 onClick={() => { handleLinkClick("/contact"), scrollToTop() }}
@@ -125,7 +117,15 @@ export default function Navbar() {
                 Contact Us
               </Link>
 
-             
+             <Link
+                to="/blogs"
+                onClick={() => { handleLinkClick("/blog"), scrollToTop() }}
+                className={`rounded-md px-3 py-1 text-sm font-medium  ${activeLink === "/blog" ? "border-b-2 border-primary" : ""
+                  }`}
+                aria-current="page"
+              >
+               Blog
+              </Link>
 
             </div>
           </div>
