@@ -4,6 +4,8 @@ import About from './home/About'
 import Service from './home/Service'
 import Financial from './home/Financial'
 import Clients from './home/Clients'
+import Getstarted from './home/Getstarted'
+import Whychooseus from './home/Whychooseus'
 // import Insights from './home/Insights'
 
 export default function Home() {
@@ -12,9 +14,12 @@ export default function Home() {
     <div className="">
       <Hero />
       <About />
+      <Getstarted/>
+      <Whychooseus/>
       <Service/>
       <Financial/>
       <Clients/>
+
       {/* <Insights/> */}
     </div>
 

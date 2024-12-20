@@ -15,11 +15,11 @@ function Hero() {
                     <div className="grid xl:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 sm:my-5 sm:py-5 md:gap-12 gap-12">
                         <div className="py-2 flex items-center">
                             <div className='px-6'>
-                                <h1 className="capitalize xl:text-h1 mb-7 md:text-h2 lg:text-h2 text-h4 leading-8">
-                                    <p className=' lg:leading-[70px] md:leading-[50px] '>Empowering Small Businesses with</p>
-                                    <p className='font-bold lg:leading-[80px] leading-15 '>Seamless Funding Solutions</p>
+                                <h1 className="capitalize xl:text-h2 mb-7 md:text-h3 lg:text-h3 text-h5 leading-8">
+                                    <p className=' lg:leading-[70px] md:leading-[50px] '>Empowering Your Business with Fast, Flexible Financing.</p>
+                                    <p className='font-bold lg:leading-[65px] leading-15 md:leading-[40px]'>Unlock growth opportunities with fast and flexible business funding options tailored to your needs.</p>
                                 </h1>
-                                <p className='mb-6 leading-8 text-h5 text-justify'>At Rose Jade Inc., we provide fast, flexible, and accessible financial solutions designed to fuel your business growth. Whether you're looking for a Business Cash Advance, Line of Credit, or Equipment Financing, we’re here to support your journey.</p>
+                                <p className='mb-6 leading-8 text-h5 text-justify'>At Rose Jade Inc, we specialize in Merchant Cash Advances (MCA), Line of Credit, and Equipment Financing, empowering small businesses to streamline operations and boost revenue. Our hassle-free solutions offer quick access to funds, ensuring you can seize new opportunities and achieve sustainable growth.</p>
                                 <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-12 my-5 text-center py-5 ">
                                     <div className="bg-white text-gray-dark rounded-lg px-4 py-6">15+ <br />Year Experience</div>
                                     <div className='bg-white text-gray-dark rounded-lg px-4 py-6 '>75% <br /> Growth Rate</div>
