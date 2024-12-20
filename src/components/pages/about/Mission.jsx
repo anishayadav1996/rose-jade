@@ -4,7 +4,7 @@ export default function Mission() {
     return (
         <>
              <div className="xl:container px-6 lg:px-16 mx-auto">
-                <h2 className="capitalize lg:text-h2 font-bold text-gray-dark  mb-5 leading-[50px] text-center text-h3">Our Mission And Value </h2>
+                <h2 className="capitalize lg:text-h2 font-bold text-gray-dark  mb-5 leading-[50px] text-center text-h3">Everything you Need to Know about Rose Jade Inc. </h2>
                 <p className='px-6 text-justify text-h5'>To inspire and empower small businesses to achieve their dreams by providing innovative solutions, personalized support, and a steadfast commitment to their growth and success.</p>
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-12 my-5 text-center py-5 ">
                     <div className="bg-primary text-white rounded-lg px-4 py-10 ">15+ <br />Year Experience</div>

@@ -110,14 +110,14 @@ export default function Navbar() {
                 <button
                   type="button"
                   onClick={toggleDropdown}
-                  className="inline-flex w-full justify-center gap-x-1.5 bg-white px-3 py-2 text-sm font-semibold shadow-sm ring-1 ring-inset"
+                  className="inline-flex w-full justify-center gap-x-1.5 bg-white px-3 py-2 text-sm font-semibold shadow-sm "
                   id="menu-button"
                   aria-expanded={isDropdownOpen}
                   aria-haspopup="true"
                 >
                   Services
                   <svg
-                    className="-mr-1 size-5 text-gray-400"
+                    className="-mr-1 size-5 "
                     viewBox="0 0 20 20"
                     fill="currentColor"
                     aria-hidden="true"
@@ -131,7 +131,7 @@ export default function Navbar() {
                 </button>
                 {isDropdownOpen && (
                   <div
-                    className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none"
+                    className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg "
                     role="menu"
                     aria-orientation="vertical"
                     aria-labelledby="menu-button"
@@ -139,33 +139,33 @@ export default function Navbar() {
                     <div className="py-1" role="none">
                       <Link
                         to="/service/web-development"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        className="block px-4 py-2 text-sm "
                         onClick={() => {
                           handleLinkClick("/service/web-development");
                           scrollToTop();
                         }}
                       >
-                        Web Development
+                        Merchant Cash Advances
                       </Link>
                       <Link
                         to="/service/mobile-development"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        className="block px-4 py-2 text-sm "
                         onClick={() => {
                           handleLinkClick("/service/mobile-development");
                           scrollToTop();
                         }}
                       >
-                        Mobile Development
+                        Lines of Credit
                       </Link>
                       <Link
                         to="/service/seo"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        className="block px-4 py-2 text-sm "
                         onClick={() => {
                           handleLinkClick("/service/seo");
                           scrollToTop();
                         }}
                       >
-                        SEO Services
+                       Equipment Financing
                       </Link>
                     </div>
                   </div>

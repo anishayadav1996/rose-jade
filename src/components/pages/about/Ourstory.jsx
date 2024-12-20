@@ -4,33 +4,14 @@ export default function Ourstory() {
     return (
         <>
             <div className="xl:container px-6 lg:px-16 mx-auto py-20">
-                <h2 className="capitalize lg:text-h2 font-bold text-primary  mb-5 leading-[50px] text-center text-h3">Our Story</h2>
-                <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-12 my-5 text-center py-5 ">
-                    <div className="rounded-lg overflow-hidden shadow-lg bg-white">
-                        <div className="py-8">
-                            <i className="fas fa-money-check text-primary text-h1"></i>
-                            <h2 className='text-secondary-light mb-2 mt-3 font-bold px-5'>A Dream Born from Passion</h2>
-                            <p className="px-6 pt-2 text-h6 text-justify leading-6">Every great journey starts with a vision, and for Rose Jade Inc., that vision was simple yet transformative: to empower small businesses to thrive in a world where they often face disproportionate challenges. Inspired by the resilience and creativity of entrepreneurs, our founders embarked on a mission to make a difference, one business at a time.</p>
-                        </div>
+                <h2 className="capitalize lg:text-h2 font-bold text-primary leading-[50px] text-center text-h3">Our Story</h2>
+                <div className="my-5 text-center py-3">
+                    <div className=" bg-white">
+                            <p className="px-6 pt-2 text-h6 text-justify leading-6">Rose Jade Inc. is committed to supporting small business growth by providing transparent funding and reliable financing solutions. We offer tailored options like Merchant Cash Advance, Line of Credit, and growth funding, allowing businesses to access the quick capital they need without delays. In partnership with trusted providers like Prosperum Capital and Arsenal Funding, we specialize in offering flexible and affordable solutions that are customized to your business's unique needs.</p>
+                            <p className="px-6 pt-2 text-h6 text-justify leading-6">Whether you need working capital, a business credit line, or startup funding, we simplify the process with clear and straightforward plans designed to support your business’s success. At Rose Jade, our focus is on transparent funding that fuels both short-term and long-term growth.</p>
+                            <p className="px-6 pt-2 text-h6 text-justify leading-6">We’re also proud to work closely with ISOs and brokers, offering flexible and reliable funding solutions to meet the needs of small and medium-sized businesses. If you’re looking to connect your clients with the right financing options, we’re here to help with tailored funding requirements and comprehensive support.</p>
+                            <p className="px-6 pt-2 text-h6 text-justify leading-6">Let Rose Jade Inc. be your trusted partner in business growth—offering easy business funding that empowers you to succeed.</p>
                     </div>
-                    <div className="rounded-lg overflow-hidden shadow-lg bg-white">
-                        <div className=" py-8">
-                            <i className="fas fa-money-check text-primary text-h1"></i>
-                            <h2 className='text-secondary-light mb-2 mt-3 font-bold px-4'>The Meaning Behind the Name</h2>
-                            <p className="text-h6 text-justify px-6 pt-2 leading-6">
-                                The name Rose Jade is not just a brand—it’s a promise. The rose represents strength, beauty, and perseverance in the face of adversity, while jade symbolizes wisdom, prosperity, and growth. Together, they reflect our commitment to helping businesses bloom and flourish, no matter how tough the journey.</p>
-
-                        </div>
-                    </div>
-                    <div className="rounded-lg overflow-hidden shadow-lg bg-white">
-                        <div className=" py-8">
-                            <i className="fas fa-money-check text-primary text-h1"></i>
-                            <h2 className='text-secondary-light mb-2 mt-3 font-bold px-4'>Building a Movement, Not Just a Business</h2>
-                            <p className="pt-2 leading-6 text-h6 text-justify px-6">
-                                Rose Jade Inc. was born out of real-world entrepreneurial experiences. Our founders knew firsthand the sleepless nights, relentless dedication, and uphill battles that small business owners face. They recognized the need for a partner who not only offers solutions but also deeply understands the challenges of building a business from the ground up.
-                            </p></div>
-                    </div>
-
                 </div>
             </div>
 
