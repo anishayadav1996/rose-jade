@@ -154,13 +154,13 @@ export default function Footer() {
                                 <h2 className="mb-6 text-h5  font-semibold uppercase">Services</h2>
                                     <ul className="font-medium">
                                         <li className="mb-4">
-                                            <Link href="/" className="hover:text-secondary text-h5" onClick={scrollToTop}>Merchant Cash Advances</Link>
+                                            <Link href="/merchant-cash" className="hover:text-secondary text-h5" onClick={scrollToTop}>Merchant Cash Advances</Link>
                                         </li>
                                         <li className="mb-4">
-                                            <Link to="/about-us" className="hover:text-secondary text-h5" onClick={scrollToTop}>Lines of Credit</Link>
+                                            <Link to="/line-of-credit" className="hover:text-secondary text-h5" onClick={scrollToTop}>Lines of Credit</Link>
                                         </li>
                                         <li className="mb-4">
-                                            <Link to="/service" className="hover:text-secondary text-h5" onClick={scrollToTop}>Equipment Financing</Link>
+                                            <Link to="/equipment-financing" className="hover:text-secondary text-h5" onClick={scrollToTop}>Equipment Financing</Link>
                                         </li>
                                         
                                       

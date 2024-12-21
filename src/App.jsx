@@ -10,6 +10,9 @@ import Privacy from './components/pages/Privacy.jsx';
 import Terms from './components/pages/Terms.jsx';
 import Blogs from './components/pages/Blogs.jsx';
 import BlogIndividaul from './components/pages/blogs/blogIndividaul.jsx';
+import MerchantcashAdvanc from './components/pages/MerchantcashAdvanc.jsx';
+import EquipmentFinancing from './components/pages/EquipmentFinancing.jsx';
+import Lineofcredit from './components/pages/Lineofcredit.jsx';
 export default function App() {
   return (
     <div>
@@ -24,6 +27,9 @@ export default function App() {
           <Route path="/terms-conditions" element={< Terms />} />
           <Route path="/blogs" element={<Blogs/>} />
           <Route path="/blogs/:blogSlug" element={<BlogIndividaul/>} />
+          <Route path="/merchant-cash" element={<MerchantcashAdvanc/>} />
+          <Route path="/equipment-financing" element={<EquipmentFinancing/>} />
+          <Route path="/line-of-credit" element={<Lineofcredit/>} />
         </Routes>
         {/* <Editor /> */}
         <Footer />

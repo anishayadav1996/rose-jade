@@ -3,15 +3,17 @@ import React from 'react'
 export default function Mission() {
     return (
         <>
-             <div className="xl:container px-6 lg:px-16 mx-auto">
-                <h2 className="capitalize lg:text-h2 font-bold text-gray-dark  mb-5 leading-[50px] text-center text-h3">Everything you Need to Know about Rose Jade Inc. </h2>
-                <p className='px-6 text-justify text-h5'>To inspire and empower small businesses to achieve their dreams by providing innovative solutions, personalized support, and a steadfast commitment to their growth and success.</p>
-                <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-12 my-5 text-center py-5 ">
-                    <div className="bg-primary text-white rounded-lg px-4 py-10 ">15+ <br />Year Experience</div>
-                    <div className='bg-primary text-white rounded-lg px-4 py-10 '>75% <br /> Growth Rate</div>
-                    <div className='bg-primary text-white rounded-lg px-4 py-10 ' >120 <br /> Active Currently</div>
-                </div>
-            </div>
+    <div className="xl:container lg:px-16  mx-auto py-10 px-6">
+        <div className="mx-auto grid md:grid-cols-2 grid-cols-1 gap-12 ">
+        <div className="px-6"><img className="rounded-lg w-auto h-full  md:w-full object-cover object-top" src=" src/assets/img/about-home.jpg" alt="about-img" /></div>
+          <div className="flex flex-col space-y-5 px-6"> 
+          <h2 className="capitalize sm:text-h2 font-bold  text-h3 text-primary mb-3 lg:leading-[40px] leading-[50px]">Everything you Need to Know about Rose Jade Inc.</h2>
+          <p className='text-h3 text-justify text-secondary'>Our Mission</p>
+                {/* <p className='text-secondary text-h4 font-bold'>Mission</p> */}
+                <p className='text-justify pt-1 leading-6'>At Rose Jade Inc., our mission is to empower small business owners with tailored financing solutions that drive growth, stability, and long-term success. By providing accessible funding options like Merchant Cash Advances, Lines of Credit, and Equipment Financing, we aim to remove financial barriers and help businesses seize opportunities, overcome challenges, and thrive in competitive markets.</p>
+          </div>
+        </div>
+      </div>
         </>
     )
 }

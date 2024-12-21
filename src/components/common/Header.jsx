@@ -86,7 +86,7 @@ export default function Navbar() {
                   handleLinkClick("/");
                   scrollToTop();
                 }}
-                className={`rounded-md px-3 py-1 text-sm font-medium ${activeLink === "/" ? "border-b-2 border-primary" : ""
+                className={`rounded-md px-3 py-1 text-sm font-medium hover:text-secondary ${activeLink === "/" ? "border-b-2 border-primary" : ""
                   }`}
                 aria-current="page"
               >
@@ -98,7 +98,7 @@ export default function Navbar() {
                   handleLinkClick("/about");
                   scrollToTop();
                 }}
-                className={`rounded-md px-3 py-1 text-sm font-medium ${activeLink === "/about" ? "border-b-2 border-primary" : ""
+                className={`rounded-md px-3 py-1 text-sm font-medium hover:text-secondary ${activeLink === "/about" ? "border-b-2 border-primary" : ""
                   }`}
                 aria-current="page"
               >
@@ -110,7 +110,7 @@ export default function Navbar() {
                 <button
                   type="button"
                   onClick={toggleDropdown}
-                  className="inline-flex w-full justify-center gap-x-1.5 bg-white px-3 py-2 text-sm font-semibold shadow-sm "
+                  className="inline-flex w-full justify-center gap-x-1.5 bg-white px-3 py-2 text-sm font-semibold hover:text-secondary"
                   id="menu-button"
                   aria-expanded={isDropdownOpen}
                   aria-haspopup="true"
@@ -138,30 +138,30 @@ export default function Navbar() {
                   >
                     <div className="py-1" role="none">
                       <Link
-                        to="/service/web-development"
-                        className="block px-4 py-2 text-sm "
+                        to="/merchant-cash"
+                        className="block px-4 py-2 text-sm hover:text-secondary"
                         onClick={() => {
-                          handleLinkClick("/service/web-development");
+                          handleLinkClick("/merchant-cash");
                           scrollToTop();
                         }}
                       >
                         Merchant Cash Advances
                       </Link>
                       <Link
-                        to="/service/mobile-development"
-                        className="block px-4 py-2 text-sm "
+                        to="/line-of-credit"
+                        className="block px-4 py-2 text-sm hover:text-secondary"
                         onClick={() => {
-                          handleLinkClick("/service/mobile-development");
+                          handleLinkClick("/line-of-credit");
                           scrollToTop();
                         }}
                       >
                         Lines of Credit
                       </Link>
                       <Link
-                        to="/service/seo"
-                        className="block px-4 py-2 text-sm "
+                        to="/equipment-financing"
+                        className="block px-4 py-2 text-sm hover:text-secondary"
                         onClick={() => {
-                          handleLinkClick("/service/seo");
+                          handleLinkClick("/equipment-financing");
                           scrollToTop();
                         }}
                       >
@@ -178,7 +178,7 @@ export default function Navbar() {
                   handleLinkClick("/contact");
                   scrollToTop();
                 }}
-                className={`rounded-md px-3 py-1 text-sm font-medium ${activeLink === "/contact" ? "border-b-2 border-primary" : ""
+                className={`rounded-md px-3 py-1 text-sm font-medium hover:text-secondary ${activeLink === "/contact" ? "border-b-2 border-primary" : ""
                   }`}
                 aria-current="page"
               >
@@ -190,7 +190,7 @@ export default function Navbar() {
                   handleLinkClick("/blog");
                   scrollToTop();
                 }}
-                className={`rounded-md px-3 py-1 text-sm font-medium ${activeLink === "/blog" ? "border-b-2 border-primary" : ""
+                className={`rounded-md px-3 py-1 text-sm font-medium hover:text-secondary ${activeLink === "/blog" ? "border-b-2 border-primary" : ""
                   }`}
                 aria-current="page"
               >
@@ -213,7 +213,7 @@ export default function Navbar() {
           <div className="space-y-1 px-2 pb-3 pt-2">
             <Link
               to="/"
-              className="block rounded-md bg-white px-3 py-2 text-base font-medium text-black hover:text-blue"
+              className="block rounded-md bg-white px-3 py-2 text-base font-medium text-black hover:text-secondary"
               aria-current="page"
               onClick={closeMenu}
             >
@@ -221,14 +221,14 @@ export default function Navbar() {
             </Link>
             <Link
               to="/about"
-              className="block rounded-md px-3 py-2 text-base font-medium text-black hover:text-blue"
+              className="block rounded-md px-3 py-2 text-base font-medium text-black hover:text-secondary"
               onClick={closeMenu}
             >
               About
             </Link>
             <Link
               to="/contact"
-              className="block rounded-md px-3 py-2 text-base font-medium text-black hover:text-blue"
+              className="block rounded-md px-3 py-2 text-base font-medium text-black hover:text-secondary"
               onClick={closeMenu}
             >
               Contact
@@ -237,7 +237,7 @@ export default function Navbar() {
               <button
                 type="button"
                 onClick={toggleDropdown}
-                className="inline-flex w-full justify-center gap-x-1.5 bg-white px-3 py-2 text-sm font-semibold shadow-none"
+                className="inline-flex w-full justify-center gap-x-1.5 bg-white px-3 py-2 text-sm font-semibold hover:text-secondary"
                 id="menu-button"
                 aria-expanded={isDropdownOpen}
                 aria-haspopup="true"
@@ -265,30 +265,30 @@ export default function Navbar() {
                 >
                   <div className="py-1" role="none">
                     <Link
-                      to="/"
-                      className="block px-4 py-2 text-sm  "
+                      to="/merchant-cash"
+                      className="block px-4 py-2 text-sm  hover:text-secondary"
                       onClick={() => {
-                        handleLinkClick("/");
+                        handleLinkClick("/merchant-cash");
                         scrollToTop();
                       }}
                     >
                       Merchant Cash Advances
                     </Link>
                     <Link
-                      to="/"
-                      className="block px-4 py-2 text-sm "
+                      to="/line-of-credit"
+                      className="block px-4 py-2 text-sm hover:text-secondary"
                       onClick={() => {
-                        handleLinkClick("/");
+                        handleLinkClick("/line-of-credit");
                         scrollToTop();
                       }}
                     >
                      Lines of Credit
                     </Link>
                     <Link
-                      to="/"
-                      className="block px-4 py-2 text-sm "
+                      to="/equipment-financing"
+                      className="block px-4 py-2 text-sm hover:text-secondary"
                       onClick={() => {
-                        handleLinkClick("/");
+                        handleLinkClick("/equipment-financing");
                         scrollToTop();
                       }}
                     >
