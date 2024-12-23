@@ -10,7 +10,7 @@ export default function Hero() {
                         <div className=''>
                           <p className='sm:text-h1 leading-[64px] font-bold text-h2'>Fuel Your Business Growth with a Line of Credit at Rose Jade Inc.
                           </p>
-                            <p className='mb-6 leading-8 text-h5 text-justify pt-6'>At Rose Jade Inc., we understand that managing cash flow is vital to running a successful business. Whether you're facing seasonal fluctuations, unexpected expenses, or looking to seize new opportunities, our Line of Credit solutions offer the flexibility and financial security Explore how Rose Jade offers reliable financial support and comprehensive solutions to help your business thrive. Apply for business funding today and take your success to the next level!</p>
+                            <p className='mb-6 leading-8 text-h5 text-justify pt-6'>At Rose Jade Inc., we understand that managing cash flow is vital to running a successful business. Whether you're facing seasonal fluctuations, unexpected expenses, or looking to seize new opportunities, our Line of Credit solutions offer the flexibility and financial security</p>
                             <p className='mb-6 leading-8 text-h5 text-justify pt-6'>you need. With a revolving line of credit, you only borrow what you need and repay it on your terms, ensuring you have access to funds whenever your business requires them.
                             </p>
                             <p className='mb-6 leading-8 text-h5 text-justify pt-6'>We provide tailored credit options that give you the freedom to manage your working capital effectively while maintaining financial stability and fueling growth.

@@ -13,6 +13,7 @@ import BlogIndividaul from './components/pages/blogs/blogIndividaul.jsx';
 import MerchantcashAdvanc from './components/pages/MerchantcashAdvanc.jsx';
 import EquipmentFinancing from './components/pages/EquipmentFinancing.jsx';
 import Lineofcredit from './components/pages/Lineofcredit.jsx';
+import BlogSearch from './components/pages/blogs/BlogSearch.jsx';
 export default function App() {
   return (
     <div>
@@ -30,6 +31,7 @@ export default function App() {
           <Route path="/merchant-cash" element={<MerchantcashAdvanc/>} />
           <Route path="/equipment-financing" element={<EquipmentFinancing/>} />
           <Route path="/line-of-credit" element={<Lineofcredit/>} />
+          <Route path="/search" element={<BlogSearch/>} />
         </Routes>
         {/* <Editor /> */}
         <Footer />

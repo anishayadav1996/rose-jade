@@ -21,8 +21,6 @@ function About() {
                 {/* <p className='text-secondary text-h4 font-bold pt-2'>Our Story</p> */}
                 <p className='text-justify pt-2 leading-6'>Our mission is clear: to build a supportive network where small business owners can thrive, connecting you with the resources and support you need to succeed. With a straightforward, customer-first philosophy, we’re here to provide the guidance and tools necessary for businesses with 500+ credit scores and at least six months in operation.</p>
                 <p className='text-justify pt-2 leading-6'>Let Rose Jade be your go-to partner for growth and opportunity.</p>
-                <p className='text-justify pt-2 leading-6'>Explore how Rose Jade offers reliable financial support and comprehensive solutions to help your business thrive. Apply for business funding today and take your success to the next level!
-                </p>
               </li>
             </ul>
           </div>

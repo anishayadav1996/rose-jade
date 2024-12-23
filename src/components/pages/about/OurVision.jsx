@@ -10,9 +10,7 @@ export default function OurVision() {
                 {/* <p className='text-secondary text-h4 font-bold'>Mission</p> */}
                 <p className='text-justify pt-2 leading-6'>We envision a thriving network of small businesses supported by reliable business funding resources, expert guidance, and a commitment to customer success. Our goal is to be the go-to partner for small business funding, providing flexible financing options that meet the unique needs of startups, growing enterprises, and established businesses.
                 </p>
-                <p className='text-justify pt-2 leading-6'>By offering services such as Affordable Merchant Cash Advance services, Flexible Lines of Credit for small businesses, and quick capital solutions, we strive to empower businesses to Explore how Rose Jade offers reliable financial support and comprehensive solutions to help your business thrive. Apply for business funding today and take your success to the next level!
-                </p>
-                <p className='text-justify pt-2 leading-6'>Grow and succeed in today’s competitive market. Whether it’s startup funding or short-term funding for immediate needs, Rose Jade Inc. is dedicated to helping businesses thrive.
+                <p className='text-justify pt-2 leading-6'>By offering services such as Affordable Merchant Cash Advance services, Flexible Lines of Credit for small businesses, and quick capital solutions, we strive to empower businesses to Grow and succeed in today’s competitive market. Whether it’s startup funding or short-term funding for immediate needs, Rose Jade Inc. is dedicated to helping businesses thrive.
 
                 </p>
           </div>

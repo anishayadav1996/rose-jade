@@ -3,13 +3,15 @@ import React from 'react'
 export default function Benefits() {
     return (
         <>
-        <div className='xl:container px-6 '>
+        <div className='sm:px-6 py-20 px-6 mx-auto xl:container'>
             <div className="mx-auto grid xl:grid-cols-2 md:grid-cols-1 gap-12 ">
+            <div className="px-6"><img className="rounded-lg w-auto h-full  md:w-full object-cover object-top" src=" src/assets/img/about-home.jpg" alt="about-img" /></div>
                 <div className="flex flex-col space-y-5 px-6 lg:px-16">
-                    <h2 className="capitalize sm:text-h2 font-bold  text-h3 text-primary mb-3 lg:leading-[40px] leading-[50px]">Benefits of Equipment Financing at Rose Jade Inc.
+                    
+                    <h2 className="capitalize sm:text-h2 font-bold  text-h3 text-primary mb-3 lg:leading-[50px] leading-[50px]">Benefits of Equipment Financing at Rose Jade Inc.
                     </h2>
                     <p className='text-justify pt-2 leading-6'>When you work with Rose Jade Inc., you gain access to a range of benefits designed to support your business:</p>
-                    <ol className="mb-20 list-decimal">
+                    <ol className="mb-20 list-decimal leading-8">
                         <li>
                             <span className="font-bold">
                             Preserve Cash Flow:
@@ -19,7 +21,6 @@ export default function Benefits() {
                         <li>
                             <span className="font-bold">Flexible Terms: </span>
                             We offer a variety of financing options with customizable terms, ensuring you find a plan that fits your specific business needs.
-                            Explore how Rose Jade offers reliable financial support and comprehensive solutions to help your business thrive. Apply for business funding today and take your success to the next level!
                         </li>
                         <li>
                             <span className="font-bold">Quick Approval: </span>
@@ -41,7 +42,7 @@ export default function Benefits() {
                     </ol>
 
                 </div>
-                <div className="px-6"><img className="rounded-lg w-auto h-full  md:w-full object-cover object-top" src=" src/assets/img/about-home.jpg" alt="about-img" /></div>
+               
             </div>
             </div>
         </>

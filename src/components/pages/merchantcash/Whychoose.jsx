@@ -13,7 +13,6 @@ export default function Whychoose() {
                           </p>
                             <p className='mb-6 leading-8 text-h5 text-justify pt-6'>A Merchant Cash Advance (MCA) provides upfront funding in exchange for a percentage of your future sales, offering an ideal alternative for businesses seeking quick capital without the need for collateral. As the Best MCA in New York, we offer a fast MCA funding solution that helps your business maintain cash flow and continue operations without the burden of fixed repayment schedules. This flexible financing option allows you to access the funds you need quickly, empowering you to focus on growth and seize new opportunities while enjoying the peace of mind that comes with simple, scalable repayment terms.
                             </p>
-                            <p className='mb-6 leading-8 text-h5 text-justify pt-6'>Explore how Rose Jade offers reliable financial support and comprehensive solutions to help your business thrive. Apply for business funding today and take your success to the next level!</p>
                         </div>
                     </div>
                    

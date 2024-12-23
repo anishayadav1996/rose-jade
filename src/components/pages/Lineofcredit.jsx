@@ -2,8 +2,10 @@ import React from 'react'
 import Hero from './lineofcredit/Hero'
 import Whychoose from './lineofcredit/Whychoose'
 import Benefits from './lineofcredit/Benefits'
-import Features from './equipmentfinancing/Features'
-import Faq from './about/Faq'
+// import Features from './equipmentfinancing/Features'
+import Faq from '../common/Faq'
+import { LOC } from '../contstant/constant'
+import Howdoesabusiness from './lineofcredit/Howdoesabusiness'
 
 export default function Lineofcredit() {
   return (
@@ -11,8 +13,8 @@ export default function Lineofcredit() {
       <Hero/>
       <Whychoose/>
       <Benefits/>
-      <Features/>
-      <Faq/>
+      <Howdoesabusiness/>
+      <Faq data={LOC.faq}/>
     </div>
   )
 }

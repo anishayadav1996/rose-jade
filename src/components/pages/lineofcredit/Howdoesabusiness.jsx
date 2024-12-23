@@ -4,50 +4,47 @@ export default function Howdoesabusiness() {
   return (
     <>
        <div className=''>
-      <div className="xl:container lg:px-16  mx-auto pt-5 px-6 ">
+       <div className="xl:container lg:px-16  mx-auto pt-5 px-6 ">
         <div className="mx-auto grid xl:grid-cols-2 md:grid-cols-1 gap-12 ">
-          <div className="flex flex-col space-y-5 px-6">
-            <h2 className="capitalize sm:text-h4 font-semibold text-primary text-h5 mb-3 lg:leading-[40px] leading-[50px]">
-            Features of Equipment Financing
-            </h2>
-            {/* <p className='text-justify text-h5'>A Merchant Cash Advance is an excellent choice for businesses that require fast and flexible funding. Here are a few indicators that MCA might be the perfect solution for you:</p> */}
-            <ul className="mb-20 list-disc">
-              <li>
-               
-                <span className="font-bold">
-                Flexible Financing Options:
-                </span>
-                Choose between leasing or purchasing equipment based on your business needs. Financing terms can be tailored, with customizable repayment schedules to suit your cash flow.
-            
-              </li>
-              <li>
-                <span className="font-bold">
-                Quick Approval and Fast Funding:
-                </span>
-                Fast approval within 3-4 hours with a simplified application process. Access the funds you need quickly, ensuring minimal downtime for your business.
-              </li>
-              <li>
-                <span className="font-bold">Affordable Repayment Terms: </span>
-                Fixed monthly payments ensure you can plan your budget effectively. Repayment terms range from 12 to 60 months, providing flexibility for your business’s financial situation.
-              </li>
-              <li>
-              You lack collateral to secure traditional loans but still require financing to support your operations.
-
-              </li>
-              <li>
-              <span className="font-bold">No Collateral Requirements: </span>
-              Equipment itself serves as collateral, eliminating the need for additional personal or business assets. This makes equipment financing a risk-free and accessible option, especially for small businesses.
-
-              </li>
-            </ul>
-          </div>
-          <div className="px-6">
+        <div className="px-6">
             <img
               className="rounded-lg w-auto h-full  md:w-full object-cover object-top"
               src=" src/assets/img/about-home.jpg"
               alt="about-img"
             />
           </div>
+          <div className="flex flex-col space-y-5 px-6">
+            <h2 className="capitalize sm:text-h4 font-semibold text-primary text-h5 mb-3 lg:leading-[40px] leading-[50px]">
+            How Does a Business Line of Credit Work?
+            </h2>
+            <p className='text-justify text-h5'>Understanding how a line of credit functions is key to maximizing its benefits for your business. Here’s how it works:
+            </p>
+            <ul className="mb-20 list-disc leading-9">
+              <li>
+               
+                <span className="font-bold">
+                Pre-Approved Credit Limit:
+                </span>
+                After approval, you are given a set credit limit based on your business’s financial health and needs.
+              </li>
+              <li>
+                <span className="font-bold">
+                Draw Funds as Needed:
+                </span>
+                Borrow any amount up to the approved limit whenever required.
+              </li>
+              <li>
+                <span className="font-bold">Flexible Repayment: </span>
+                Repay funds at your convenience, with interest only charged on the borrowed amount.
+              </li>
+              <li>
+              <span className="font-bold">Revolving Access:  </span>
+              Once repaid, the credit becomes available again for future use.
+
+              </li>
+            </ul>
+          </div>
+       
         </div>
       </div>
     </div>

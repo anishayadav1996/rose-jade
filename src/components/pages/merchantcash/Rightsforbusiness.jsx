@@ -5,12 +5,19 @@ export default function Rightsforbusiness() {
     <div className=''>
       <div className="xl:container lg:px-16  mx-auto pt-5 px-6 ">
         <div className="mx-auto grid xl:grid-cols-2 md:grid-cols-1 gap-12 ">
+        <div className="px-6">
+            <img
+              className="rounded-lg w-auto h-full  md:w-full object-cover object-top"
+              src=" src/assets/img/about-home.jpg"
+              alt="about-img"
+            />
+          </div>
           <div className="flex flex-col space-y-5 px-6">
             <h2 className="capitalize sm:text-h4 font-semibold text-primary text-h5 mb-3 lg:leading-[40px] leading-[50px]">
             Is a Merchant Cash Advance Right for Your Business?
             </h2>
             <p className='text-justify text-h5'>A Merchant Cash Advance is an excellent choice for businesses that require fast and flexible funding. Here are a few indicators that MCA might be the perfect solution for you:</p>
-            <ul className="mb-20 list-disc">
+            <ul className="mb-20 list-disc leading-7">
               <li>
                 <span>You need </span>
                 <span className="font-bold">
@@ -40,13 +47,7 @@ export default function Rightsforbusiness() {
               </li>
             </ul>
           </div>
-          <div className="px-6">
-            <img
-              className="rounded-lg w-auto h-full  md:w-full object-cover object-top"
-              src=" src/assets/img/about-home.jpg"
-              alt="about-img"
-            />
-          </div>
+          
         </div>
       </div>
     </div>

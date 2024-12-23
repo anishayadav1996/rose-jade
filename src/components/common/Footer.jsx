@@ -107,6 +107,18 @@ export default function Footer() {
         }
     
     };
+    const handleFileUpload = async (e) => {
+        e.preventDefault();
+        const formData = new FormData();
+        formData.append('submail', formData.submail)
+        const response = await fetch('http://localhost:8080/api/contact/subscribe', {
+            method: 'POST',
+            body: formData
+        });
+  
+        const result = await response.json();
+        alert(result);
+    };
     
     return (
         <>
@@ -194,10 +206,10 @@ export default function Footer() {
                                 funding opportunities, and expert tips to grow your business.
                             </p>
                             <div className="w-full flex justify-center items-center py-4">
-                                <form className="flex flex-col sm:flex-row items-center  w-11/12 sm:w-3/4 md:w-2/3 lg:w-3/2 xl:w-1/3">
+                                <form className="flex flex-col sm:flex-row items-center  w-11/12 sm:w-3/4 md:w-2/3 lg:w-3/2 xl:w-1/3" onSubmit={handleFileUpload}>
                                     <input
                                         type="email"
-                                        placeholder="Your E-mail Address..."
+                                        placeholder="Your E-mail Address..." name="submail"
                                         className="flex-grow px-4 w-full lg:w-[15rem] md:w-60 py-2 mb-2 sm:mb-0 text-gray text-h6 placeholder-gray rounded-full sm:rounded-l-full sm:rounded-none outline-none"
                                     />
                                     <button

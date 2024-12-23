@@ -43,13 +43,13 @@ export default function BlogIndividaul({content}) {
             <div className='md:container mx-auto px-6 lg:px-16'>
                 <div className='grid grid-cols-12  gap-12'>
 
-                    <div className='md:col-span-8 col-span-12 py-40 mb-20'>
+                    <div className='md:col-span-8 col-span-12 py-20 mb-20'>
                         {blog && (
                             <div className="">
 
-                                <img src={blog?.blog_feature_image} alt="Featured Image" className="w-full  object-cover rounded" />
+                                <img src={blog?.blog_feature_image} alt="Featured Image" className="w-full h-96 object-cover rounded-lg" />
                                 {/* <div className='flex space-x-4 py-6 font-bold'> */}
-                                <div class="flex items-center space-x-4 text-sm font-medium py-3">
+                                <div class="flex items-center space-x-4 xl:space-x-48 text-sm font-medium py-3">
                                     <div class="flex items-center space-x-2">
                                     <i class="fa fa-file text-primary" aria-hidden="true"></i> <span>{blog?.category_name
                                         }</span>

@@ -3,12 +3,12 @@ import React from 'react'
 export default function Benefits() {
   return (
     <>
-       <div className='xl:container px-6 '>
+       <div className='sm:px-6 py-20 px-6 mx-auto xl:container '>
             <div className="mx-auto grid xl:grid-cols-2 md:grid-cols-1 gap-12 ">
                 <div className="flex flex-col space-y-5 px-6 lg:px-16">
-                    <h2 className="capitalize sm:text-h2 font-bold  text-h3 text-primary mb-3 lg:leading-[40px] leading-[50px]">Benefits of a Line of Credit at Rose Jade Inc.
+                    <h2 className="capitalize sm:text-h2 font-bold  text-h3 text-primary mb-3 lg:leading-[50px] leading-[50px]">Benefits of a Line of Credit at Rose Jade Inc.
                     </h2>
-                    <ol className="mb-20 list-decimal">
+                    <ol className="mb-20 list-decimal leading-9">
                         <li>
                             <span className="font-bold">
                             Preserve Cash Flow : 

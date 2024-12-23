@@ -45,15 +45,17 @@ export default function Contact() {
       return;
     }
     try {
-      const response = await fetch("http://localhost/rose-jade/contact.php", {
+      const response = await fetch("http://localhost:8080/api/contact/subscribe", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
+      
         body: JSON.stringify(formData),
       });
+      
       const result = await response.json();
-
+      console.log(result)
       if (result.success) {
         setResponseMessage(result.message);
         setFormData({ name: "", email: "", message: "" });

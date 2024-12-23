@@ -3,8 +3,9 @@ import Hero from './merchantcash/Hero'
 import Whychoose from './merchantcash/Whychoose'
 import Processwork from './merchantcash/Processwork'
 import Benifites from './merchantcash/Benifites'
-import Faq from './about/Faq'
+import Faq from '../common/Faq'
 import Rightsforbusiness from './merchantcash/Rightsforbusiness'
+import { MCA } from '../contstant/constant'
 
 export default function MerchantcashAdvanc() {
   return (
@@ -14,7 +15,7 @@ export default function MerchantcashAdvanc() {
  <Processwork/>
  <Benifites/>
  <Rightsforbusiness/>
- <Faq/>
+ <Faq data={MCA.faq}/>
  
     </div>
   )

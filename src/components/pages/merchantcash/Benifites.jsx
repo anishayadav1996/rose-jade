@@ -6,9 +6,9 @@ export default function Benifites() {
       <div className="xl:container lg:px-16  mx-auto py-20 px-6">
         <div className="mx-auto grid xl:grid-cols-2 md:grid-cols-1 gap-12 ">
           <div className="flex flex-col space-y-5 px-6">
-          <h2 className="capitalize sm:text-h2 font-bold  text-h3 text-primary mb-3 lg:leading-[40px] leading-[50px]">Benefits of Choosing a Merchant Cash Advance at Rose Jade Inc.</h2>
+          <h2 className="capitalize sm:text-h2 font-bold  text-h3 text-primary mb-3 lg:leading-[50px] leading-[50px]">Benefits of Choosing a Merchant Cash Advance at Rose Jade Inc.</h2>
           <p className='text-justify pt-2 leading-6'>When you work with Rose Jade Inc., you gain access to a range of benefits designed to support your business:</p>
-          <ul className="mb-20 list-disc">
+          <ul className="mb-20 list-disc leading-7">
               <li>
                 <span className="font-bold">
                 Quick Access to Capital:

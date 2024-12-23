@@ -1,4 +1,5 @@
 import React from 'react'
+import Btn from '../../common/Btn';
 
 export default function Processwork() {
   return (
@@ -43,8 +44,8 @@ export default function Processwork() {
                             </span>
                         </div>
                     </div>
+                    <Btn value={'Apply Now'} txtcolor={'white'} urllink={'/contact-us'}/>
                 </div>
-                <p className='text-center text-justify text-white'>Explore how Rose Jade offers reliable financial support and comprehensive solutions to help your business thrive. Apply for business funding today and take your success to the next level!</p>
             </div>
         </div>
     </>

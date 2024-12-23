@@ -34,7 +34,6 @@ export default function Blog() {
   return (
     <div className="py-4 mt-5 lg:mb-96 sm:mb-16">
       <div className="text-center">
-        <h2 className="capitalize text-h2 mb-7">Blogs</h2>
       </div>
 
       {/* Loading and Error States */}

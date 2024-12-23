@@ -7,7 +7,9 @@ import Clients from './home/Clients'
 import Getstarted from './home/Getstarted'
 import Whychooseus from './home/Whychooseus'
 import Howtoapply from './home/Howtoapply'
-import Faq from './about/Faq'
+import Faq from '../common/Faq'
+import { Homefaq } from '../contstant/constant'
+
 // import Insights from './home/Insights'
 
 export default function Home() {
@@ -22,7 +24,7 @@ export default function Home() {
       <Howtoapply/>
       {/* <Financial/> */}
       <Clients/>
-      <Faq/>
+      <Faq data = {Homefaq.faq}/>
 
       {/* <Insights/> */}
     </div>

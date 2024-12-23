@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
@@ -6,11 +6,28 @@ export default function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false); // State for dropdown
   const [activeLink, setActiveLink] = useState("/");
   const location = useLocation();
+  const dropdownRef = useRef(null);
 
   useEffect(() => {
     // Update active link based on current location
     setActiveLink(location.pathname);
   }, [location.pathname]);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        isDropdownOpen &&
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target)
+      ) {
+        setIsDropdownOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isDropdownOpen]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -27,6 +44,7 @@ export default function Navbar() {
   const handleLinkClick = (path) => {
     setActiveLink(path);
     closeMenu();
+    setIsDropdownOpen(false);
   };
 
   const scrollToTop = () => {
@@ -35,6 +53,7 @@ export default function Navbar() {
       behavior: "smooth",
     });
   };
+  
 
   return (
     <nav className="bg-white sticky top-0 py-1 sm:py-0 z-50 shadow-md">
@@ -106,7 +125,7 @@ export default function Navbar() {
               </Link>
 
               {/* Dropdown for Services */}
-              <div className="relative inline-block text-left">
+              <div className="relative inline-block text-left" ref={dropdownRef}>
                 <button
                   type="button"
                   onClick={toggleDropdown}

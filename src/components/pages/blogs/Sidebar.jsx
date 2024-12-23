@@ -6,6 +6,7 @@ import { fetchPopularPosts, fetchLatestPosts, fetchRelatedPosts   } from '../../
 
 function Sidebar({ postId} ) {
   const dispatch = useDispatch();
+  const [search, setSearch] = useState("");
   const [activeTab, setActiveTab] = useState('recent');
 
   // Access state from the Redux store
@@ -39,16 +40,23 @@ function Sidebar({ postId} ) {
       behavior: "smooth",
     });
   }
+  const handleSearch = (e) => {
+    e.preventDefault();
+    window.location.href = `/blog/search?discover=${search}`;
+  };
+
   return (
     <>
-      <div className="w-96 pt-40  z-50">
+      <div className="w-96 pt-20  z-50">
         {/* Search Form */}
         <div>
-          <form>
+          <form onSubmit={handleSearch}>
             <div className="shadow-md py-8 rounded-xl mb-8 grid grid-cols-12 px-6">
               <input
                 type="search"
                 placeholder="Search..."
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
                 className="bg-gray-light px-4 py-2 rounded-l-md col-span-8 outline-none xl:col-span-8"
               />
               <button
@@ -72,12 +80,15 @@ function Sidebar({ postId} ) {
             {status === 'succeeded' &&
               categories.map((category) => (
                 <li key={category.category_id}>
-                  <a
-                    href={`${category.category_id}`}
+                  <Link
+                    to={route}
+                    key={index}
+                    onClick={() => handleCategoryClick(category)}
                     className="flex items-center p-2 rounded-lg"
                   >
-                    <span className="ms-3">{category.category_name}</span>
-                  </a>
+                    {/* <span className="ms-3">{category.category_name}</span> */}
+                    <p onClick={scrollToTop}>{category}</p> 
+                  </Link>
                 </li>
               ))}
           </ul>
