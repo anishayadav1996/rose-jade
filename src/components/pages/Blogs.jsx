@@ -10,6 +10,7 @@ export default function Blogs() {
             <div className='md:col-span-8 col-span-12 '>
               <Blog/>
             </div>
+            
             <div className='md:col-span-4 col-span-12 border-primary'>
                 <Sidebar/>
             </div>

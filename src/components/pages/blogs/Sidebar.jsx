@@ -48,7 +48,7 @@ function Sidebar({ postId }) {
 
   useEffect(() => {
     if (activeTab === 'related' && postId) {
-     // dispatch(fetchRelatedBlogs(postId));
+     dispatch(fetchRelatedBlogs(postId));
     }
   }, [dispatch, activeTab, postId]);
 

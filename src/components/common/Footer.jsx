@@ -78,7 +78,7 @@ export default function Footer() {
         try {
             console.log("Submitting Form Data:", formData); // Debugging log
     
-            const response = await fetch("http://localhost/rose-jade/request.php", {
+            const response = await fetch("http://localhost:8080/api/request/submit-form", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -109,16 +109,37 @@ export default function Footer() {
     };
     const handleFileUpload = async (e) => {
         e.preventDefault();
-        const formData = new FormData();
-        formData.append('submail', formData.submail)
-        const response = await fetch('http://localhost:8080/api/contact/subscribe', {
-            method: 'POST',
-            body: formData
-        });
-  
-        const result = await response.json();
-        alert(result);
-    };
+      
+        const formData = new FormData(e.target);
+        const email = formData.get("submail");
+      
+        if (!email.trim()) {
+          alert("Email is required!");
+          return;
+        }
+      
+        try {
+          const response = await fetch("http://localhost:8080/api/subscribers/subscribes", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ email }),
+          });
+          console.log("subscribers data : ", email)
+          const result = await response.json();
+          if (response.ok) {
+            alert(result.message); // Show success message
+          } else {
+            alert(result.message); // Show error message
+          }
+        } catch (error) {
+        //  console.error("Error:", error);
+          alert("An error occurred while subscribing.");
+        }
+      };
+      
+      
     
     return (
         <>
@@ -227,7 +248,7 @@ export default function Footer() {
                     className="text-white text-h4 right-4 bottom-4  cursor-pointer rounded-full  bg-primary fixed"
                     onClick={() => setIsFormOpen(true)}
                 >
-                    <i class="fa-solid fa-message px-3 pt-3"></i>
+                    <i className="fa-solid fa-message px-3 pt-3"></i>
                 </div>
                 {isFormOpen && (
                     <div

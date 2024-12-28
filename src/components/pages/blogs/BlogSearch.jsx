@@ -69,14 +69,14 @@ const BlogSearch = () => {
                         return (
                         <Link to={blogUrl} key={blog.id} onClick={scrollToTop}>
                             <div className="rounded overflow-hidden shadow-lg flex flex-col h-full">
-                                <div class="relative">
+                                <div className="relative">
                                     <img className="w-full" src={blog.blog_feature_image} alt={blog.blog_title} />
                                     <div
-                                        class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                                        className="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
                                     </div>
                                     <Link to={`/blogs/${slug}`} key={blog.id} onClick={scrollToTop}>
                                     <div
-                                        class="text-xs absolute top-0 right-0 bg-orange px-4 py-2 text-white hover:text-black mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
+                                        className="text-xs absolute top-0 right-0 bg-orange px-4 py-2 text-white hover:text-black mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
                                         {blog.category_name}
                                     </div>
                                 </Link>

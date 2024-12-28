@@ -10,7 +10,7 @@ export default function Blog() {
 
   // Pagination State
   const [currentPage, setCurrentPage] = useState(0);
-  const itemsPerPage = 12; 
+  const itemsPerPage = 12;
 
   useEffect(() => {
     dispatch(fetchBlogs());
@@ -46,30 +46,30 @@ export default function Blog() {
       {/* Blog Cards */}
       <div className="grid md:grid-cols-3 sm:grid-cols-1 my-5 py-5 gap-4">
         {currentItems.map((item) => (
-          <Link to = {`/blogs/${item.blog_slug}`} onClick={scrollToTop} key={item.blog_id}>
-          <div
-            className="max-w-sm bg-white hover:shadow-2xl transition-all duration-300 p-2 rounded-xl"
-            key={item.blog_id}
-          >
-            <div className="relative">
-              <img
-                className="w-full rounded-lg"
-                src={item.blog_feature_image || 'src/assets/img/default.jpg'}
-                alt={item.blog_title}
-              />
-              <div className="absolute top-0 left-0 bottom-[85%] px-3">
-                <button className="bg-primary text-white rounded-lg px-2 py-2 mt-4">
-                  {item.category_name}
-                </button>
+          <Link to={`/blogs/${item.blog_slug}`} onClick={scrollToTop} key={item.blog_id}>
+            <div
+              className="max-w-sm bg-white hover:shadow-2xl transition-all duration-300 p-2 rounded-xl"
+              key={item.blog_id}
+            >
+              <div className="relative">
+                <img
+                  className="w-full rounded-lg"
+                  src={item.blog_feature_image || 'src/assets/img/default.jpg'}
+                  alt={item.blog_title}
+                />
+                <div className="absolute top-0 left-0 bottom-[85%] px-3">
+                  <button className="bg-primary text-white rounded-lg px-2 py-2 mt-4">
+                    {item.category_name}
+                  </button>
+                </div>
+              </div>
+              <div className="py-4">
+                <p className="text-gray-dark text-h5 text-justify leading-6">
+                  {item.blog_title || 'No title available'}
+                </p>
+                <i className="fa fa-calendar text-primary py-5" aria-hidden="true"></i><span className='px-2'>{item.formatted_date || 'No date available'}</span>
               </div>
             </div>
-            <div className="py-4">
-              <p className="text-gray-dark text-h5 text-justify leading-6">
-                {item.blog_title || 'No title available'}
-              </p>
-              <i class="fa fa-calendar text-primary py-5" aria-hidden="true"></i><span className='px-2'>{item.formatted_date || 'No date available'}</span>
-            </div>
-          </div>
           </Link>
         ))}
       </div>
@@ -99,6 +99,7 @@ export default function Blog() {
           breakClassName={'border border-primary px-3 py-1 rounded'}
         />
       </div>
+      
     </div>
   );
 }
