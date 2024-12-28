@@ -2,10 +2,10 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 // Fetch popular posts
-export const fetchPopularPosts = createAsyncThunk(
-  'posts/fetchPopularPosts',
+export const fetchPopularBlogs = createAsyncThunk(
+  'blogs/fetchPopularBlogs',
   async () => {
-    const response = await axios.get('http://localhost:8080/api/blog/popular'); // Replace with your API endpoint
+    const response = await axios.get('http://localhost:8080/api/blogs/popular');
     return response.data;
   }
 );
@@ -14,14 +14,14 @@ export const fetchPopularPosts = createAsyncThunk(
 export const fetchLatestPosts = createAsyncThunk(
   'posts/fetchLatestPosts',
   async () => {
-    const response = await axios.get('http://localhost:8080/api/blog/latestblog'); // Replace with your API endpoint
+    const response = await axios.get('http://localhost:8080/api/blog/latestblog'); 
     return response.data;
   }
 );
-export const fetchRelatedPosts = createAsyncThunk(
-  'posts/fetchRelatedPosts',
+export const fetchRelatedBlogs = createAsyncThunk(
+  'blogs/fetchRelatedBlogs',
   async (postId) => {
-    const response = await axios.get(`http://localhost:8080/api/blog/related/${postId}`); // Replace with your API endpoint
+    const response = await axios.get(`http://localhost:8080/api/blogs/related/${postId}`);
     return response.data;
   }
 );
@@ -39,14 +39,14 @@ const postSlice = createSlice({
   extraReducers: (builder) => {
     builder
       // Popular Posts
-      .addCase(fetchPopularPosts.pending, (state) => {
+      .addCase(fetchPopularBlogs.pending, (state) => {
         state.status = 'loading';
       })
-      .addCase(fetchPopularPosts.fulfilled, (state, action) => {
+      .addCase(fetchPopularBlogs.fulfilled, (state, action) => {
         state.status = 'succeeded';
         state.popularPosts = action.payload;
       })
-      .addCase(fetchPopularPosts.rejected, (state, action) => {
+      .addCase(fetchPopularBlogs.rejected, (state, action) => {
         state.status = 'failed';
         state.error = action.error.message;
       })
@@ -63,14 +63,14 @@ const postSlice = createSlice({
         state.error = action.error.message;
       })
 //Related
-      .addCase(fetchRelatedPosts.pending, (state) => {
+      .addCase(fetchRelatedBlogs.pending, (state) => {
         state.status = 'loading';
       })
-      .addCase(fetchRelatedPosts.fulfilled, (state, action) => {
+      .addCase(fetchRelatedBlogs.fulfilled, (state, action) => {
         state.status = 'succeeded';
         state.relatedPosts = action.payload;
       })
-      .addCase(fetchRelatedPosts.rejected, (state, action) => {
+      .addCase(fetchRelatedBlogs.rejected, (state, action) => {
         state.status = 'failed';
         state.error = action.error.message;
       });

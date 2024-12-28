@@ -17,12 +17,23 @@ export const getIndividualBlog = createAsyncThunk(
   }
 );
 
-
+// export const fetchBlogByCategory = createAsyncThunk(
+//   'blog/fetchBlogByCategory',
+//   async (categoryId, { rejectWithValue }) => {
+//     try {
+//       const response = await axios.get(`http://localhost:8080/api/blog/fetchBlogByCategory/${categoryId}`);
+//       return response.data;
+//     } catch (error) {
+//       return rejectWithValue(error.response?.data || 'Failed to fetch category blogs');
+//     }
+//   }
+// );
 
 const blogSlice = createSlice({
   name: 'blogs',
   initialState: {
     blogs: [],
+   // categoryBlogs: [],
     status: 'idle', 
     error: null,
   },
@@ -50,7 +61,19 @@ const blogSlice = createSlice({
       .addCase(getIndividualBlog.rejected, (state, action) => {
         state.status = 'failed';
         state.error = action.error.message;
-      });
+      })
+      // .addCase(fetchBlogByCategory.pending, (state) => {
+      //   state.status = 'loading';
+      // })
+      // .addCase(fetchBlogByCategory.fulfilled, (state, action) => {
+      //   state.status = 'succeeded';
+      //   state.categoryBlogs = action.payload; // Store category-specific blogs
+      // })
+      // .addCase(fetchBlogByCategory.rejected, (state, action) => {
+      //   state.status = 'failed';
+      //   state.error = action.error.message;
+      // });
+
   },
 });
 

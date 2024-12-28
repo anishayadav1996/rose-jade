@@ -46,7 +46,7 @@ export default function Blog() {
       {/* Blog Cards */}
       <div className="grid md:grid-cols-3 sm:grid-cols-1 my-5 py-5 gap-4">
         {currentItems.map((item) => (
-          <Link to = {`/blogs/${item.blog_slug}`} onClick={scrollToTop}>
+          <Link to = {`/blogs/${item.blog_slug}`} onClick={scrollToTop} key={item.blog_id}>
           <div
             className="max-w-sm bg-white hover:shadow-2xl transition-all duration-300 p-2 rounded-xl"
             key={item.blog_id}
