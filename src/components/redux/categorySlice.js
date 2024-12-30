@@ -10,17 +10,17 @@ export const fetchCategories = createAsyncThunk(
   }
 );
 
-export const fetchBlogByCategory = createAsyncThunk(
-  'blogs/fetchblogByCategory',
-  async (categoryId, { rejectWithValue }) => {
-    try {
-      const response = await axios.get(`http://localhost:8080/api/blog/fetchblogByCategory/${categoryId}`);
-      return response.data;
-    } catch (error) {
-      return rejectWithValue(error.response?.data || 'Failed to fetch category blogs');
-    }
-  }
-);
+// export const fetchBlogByCategory = createAsyncThunk(
+//   'blogs/fetchblogByCategory',
+//   async (categoryId, { rejectWithValue }) => {
+//     try {
+//       const response = await axios.get(`http://localhost:8080/api/blog/category/${categoryId}`);
+//       return response.data;
+//     } catch (error) {
+//       return rejectWithValue(error.response?.data || 'Failed to fetch category blogs');
+//     }
+//   }
+// );
 
 
 // Slice for categories
@@ -28,7 +28,7 @@ const categorySlice = createSlice({
   name: 'categories',
   initialState: {
     categories: [],
-    categoryBlogs: [],
+  //  categoryBlogs: [],
     status: 'idle', 
     error: null,
   },
@@ -46,17 +46,17 @@ const categorySlice = createSlice({
         state.status = 'failed';
         state.error = action.error.message;
       })
-      .addCase(fetchBlogByCategory.pending, (state) => {
-        state.status = 'loading';
-      })
-      .addCase(fetchBlogByCategory.fulfilled, (state, action) => {
-        state.status = 'succeeded';
-        state.categoryBlogs = action.payload; // Store category-specific blogs
-      })
-      .addCase(fetchBlogByCategory.rejected, (state, action) => {
-        state.status = 'failed';
-        state.error = action.error.message;
-      });
+      // .addCase(fetchBlogByCategory.pending, (state) => {
+      //   state.status = 'loading';
+      // })
+      // .addCase(fetchBlogByCategory.fulfilled, (state, action) => {
+      //   state.status = 'succeeded';
+      //   state.categoryBlogs = action.payload; // Store category-specific blogs
+      // })
+      // .addCase(fetchBlogByCategory.rejected, (state, action) => {
+      //   state.status = 'failed';
+      //   state.error = action.error.message;
+      // });
 
   },
 });

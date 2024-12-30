@@ -44,8 +44,12 @@ export default function Processwork() {
                             </span>
                         </div>
                     </div>
-                    <Btn value={'Apply Now'} txtcolor={'white'} urllink={'/contact-us'}/>
+                   
+                    
                 </div>
+                <div className='text-center'>
+                    <Btn value={'Apply Now'} txtcolor={'white'} urllink={'/contact-us'}/>
+                    </div>
             </div>
         </div>
     </>

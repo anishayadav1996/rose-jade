@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchCategories } from '../../redux/categorySlice';
 import { useNavigate } from 'react-router-dom';
-import { fetchLatestPosts, fetchRelatedBlogs, fetchPopularBlogs } from '../../redux/postSlice';
-import { fetchBlogByCategory } from '../../redux/categorySlice';
+import { fetchLatestPosts } from '../../redux/postSlice';
+import { fetchBlogByCategory } from '../../redux/blogSlice';
 
 
 function Sidebar({ postId }) {
@@ -43,14 +43,14 @@ function Sidebar({ postId }) {
   useEffect(() => {
     dispatch(fetchCategories());
     dispatch(fetchLatestPosts());
-    dispatch(fetchPopularBlogs());
+   // dispatch(fetchPopularBlogs());
   }, [dispatch]);
 
-  useEffect(() => {
-    if (activeTab === 'related' && postId) {
-     dispatch(fetchRelatedBlogs(postId));
-    }
-  }, [dispatch, activeTab, postId]);
+  // useEffect(() => {
+  //   if (activeTab === 'related' && postId) {
+  //    dispatch(fetchRelatedBlogs(postId));
+  //   }
+  // }, [dispatch, activeTab, postId]);
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -138,7 +138,7 @@ function Sidebar({ postId }) {
           >
             Recent
           </button>
-          <button
+          {/* <button
             className={`px-4 py-2 rounded-md ${
               activeTab === 'popular' ? 'bg-primary text-white' : 'bg-primary'
             }`}
@@ -153,7 +153,7 @@ function Sidebar({ postId }) {
             onClick={() => setActiveTab('related')}
           >
             Related
-          </button>
+          </button> */}
         </div>
         <div>
         {postStatus === 'loading' && <p>Loading posts...</p>}

@@ -52,7 +52,10 @@ export default function ApplicationProcess() {
                 </div>
             </div>
         </div>
-       <Btn value={'Apply Now'} txtcolor={'white'} urllink={'/contact-us'}/>
+        <div className='text-center'>
+        <Btn value={'Apply Now'} txtcolor={'white'} urllink={'/contact-us'}/>
+        </div>
+      
     </div>
 </div>
   )
