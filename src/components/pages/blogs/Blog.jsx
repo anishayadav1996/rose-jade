@@ -44,7 +44,7 @@ export default function Blog() {
       )}
 
       {/* Blog Cards */}
-      <div className="grid md:grid-cols-3 sm:grid-cols-1 my-5 py-5 gap-4">
+      <div className="grid md:grid-cols-2 sm:grid-cols-1 my-5 py-5 gap-4">
         {currentItems.map((item) => (
           <Link to={`/blogs/${item.blog_slug}`} onClick={scrollToTop} key={item.blog_id}>
             <div
@@ -64,10 +64,14 @@ export default function Blog() {
                 </div>
               </div>
               <div className="py-4">
-                <p className="text-gray-dark text-h5 text-justify leading-6">
+                <p className="text-gray-dark text-h5 font-semibold text-justify leading-6">
                   {item.blog_title || 'No title available'}
                 </p>
+                <p className="text-gray-dark text-h5 text-justify leading-6 pt-5">
+                  {item.blog_excerpt || 'No title available'}
+                </p>
                 <i className="fa fa-calendar text-primary py-5" aria-hidden="true"></i><span className='px-2'>{item.formatted_date || 'No date available'}</span>
+                <Link to={`/blogs/${item.blog_slug}`} onClick={scrollToTop} key={item.blog_id} className="px-4">Read More <i className="fa fa-arrow-right px-2" aria-hidden="true"></i></Link>
               </div>
             </div>
           </Link>

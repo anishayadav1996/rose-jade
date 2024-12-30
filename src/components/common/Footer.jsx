@@ -171,14 +171,12 @@ export default function Footer() {
                                         <li className="mb-4">
                                             <Link to="/about-us" className="hover:text-secondary text-h5" onClick={scrollToTop}>About Us</Link>
                                         </li>
-                                        {/* <li className="mb-4">
-                                            <Link to="/service" className="hover:text-secondary text-h5" onClick={scrollToTop}>Services</Link>
-                                        </li> */}
-                                        {/* <li className="mb-4">
-                                            <Link to="/blog" className="hover:text-secondary text-h5" onClick={scrollToTop}>Blog</Link>
-                                        </li> */}
+                                       
                                         <li className="mb-4">
                                             <Link to="/contact-us" className="hover:text-secondary text-h5" onClick={scrollToTop}>Contact Us</Link>
+                                        </li>
+                                        <li className="mb-4">
+                                            <Link to="/blogs" className="hover:text-secondary text-h5" onClick={scrollToTop}>Blogs</Link>
                                         </li>
                                       
                                     </ul>

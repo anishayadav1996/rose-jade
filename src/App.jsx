@@ -16,6 +16,7 @@ import Lineofcredit from './components/pages/Lineofcredit.jsx';
 import BlogSearch from './components/pages/blogs/BlogSearch.jsx';
 import CategoryBlogsPage from './components/pages/blogs/CategoryBlogsPage.jsx';
 import SearchResultsPage from './components/pages/blogs/SearchResultsPage.jsx';
+import BlogListByTag from './components/pages/blogs/BlogListByTag.jsx';
 export default function App() {
   return (
     <div>
@@ -36,6 +37,7 @@ export default function App() {
           <Route path="/search" element={<BlogSearch/>} />
           <Route path="/blogs/category/:categoryId" element={<CategoryBlogsPage/>} />
           <Route path="/search-results" element={<SearchResultsPage/>} />
+          <Route path="/blogs/tag/:tag" element={<BlogListByTag />} />
         </Routes>
         {/* <Editor /> */}
         <Footer />

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import { fetchBlogByCategory } from '../../redux/blogSlice';
+import { fetchBlogByCategory} from '../../redux/blogSlice';
 
 function CategoryBlogsPage() {
   const { categoryId } = useParams();
@@ -22,7 +22,7 @@ function CategoryBlogsPage() {
     });
   }
   return (
-    <div className="md:container mx-auto px-6 lg:px-16 px-6 lg:px-16 mx-auto xl:mb-[20rem] lg:mb-[20rem] ] mb-[30rem]  mt-5">
+    <div className="xl:container mx-auto px-6 lg:px-16 px-6 lg:px-16 mx-auto xl:mb-[20rem] lg:mb-[20rem] ] mb-[30rem]  mt-5">
       {/* <h1 className="text-center text-3xl font-bold mb-8">Blogs for Category {categoryId}</h1> */}
       {status === 'loading' && <p>Loading blogs...</p>}
       {status === 'failed' && <p>Error: {error}</p>}
@@ -43,10 +43,14 @@ function CategoryBlogsPage() {
                   </button>
                 </div>
                 <div className="py-4">
-                <p className="text-gray-dark text-h5 text-justify leading-6">
+                <p className="text-gray-dark text-h5 font-semibold text-justify leading-6">
                   {blog.blog_title || 'No title available'}
                 </p>
+                <p className="text-gray-dark text-h5 text-justify leading-6 pt-5">
+               {blog.blog_excerpt || 'No title available'}
+             </p>
                 <i className="fa fa-calendar text-primary py-5" aria-hidden="true"></i><span className='px-2'>{blog.formatted_date || 'No date available'}</span>
+                 <Link to={`/blogs/${blog.blog_slug}`} onClick={scrollToTop} key={blog.blog_id} className="px-4">Read More <i className="fa fa-arrow-right px-2" aria-hidden="true"></i></Link>
               </div>
             </div>
             </Link>
