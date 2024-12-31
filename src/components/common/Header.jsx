@@ -91,7 +91,7 @@ export default function Navbar() {
               <div className="flex shrink-0 items-center md:block lg:block">
                 <img
                   className="h-16"
-                  src="src/assets/img/Web_Logo_Web Logo.png"
+                  src="/public/logo.png"
                   alt="logo"
                 />
               </div>
@@ -221,7 +221,7 @@ export default function Navbar() {
 
         {/* Mobile Logo */}
         <div className="mobile-logo lg:hidden sm:hidden">
-          <img className="h-16" src="src/assets/img/Logo_01.jpg" alt="logo" />
+          <img className="h-16" src="/public/logo.png" alt="logo" />
         </div>
 
         {/* Mobile Menu */}

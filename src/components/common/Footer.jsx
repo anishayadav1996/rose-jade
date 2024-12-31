@@ -150,7 +150,7 @@ export default function Footer() {
                             <div className="mb-6 md:mb-0 mt-6">
                                 <Link to="/" className="flex" onClick={scrollToTop}>
                                     <img
-                                        src="src/assets/img/Web_Logo_BW Logo_Web Logo BW.png"
+                                        src="/public/Web_Logo_BW Logo_Web Logo BW.png"
                                         className="h-20 me-4"
                                         alt="rose-jade-footer Logo"
                                     />
