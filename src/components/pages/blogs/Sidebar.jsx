@@ -85,7 +85,7 @@ function Sidebar({ postId }) {
 
 
   return (
-    <div className="w-96 mt-20 z-50">
+    <div className="w-96 mt-20 z-50 mx-auto px-6">
       {/* Search Form */}
       <div>
         <form onSubmit={handleSearch}>

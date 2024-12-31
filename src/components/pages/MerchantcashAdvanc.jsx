@@ -9,7 +9,7 @@ import { MCA } from '../contstant/constant'
 
 export default function MerchantcashAdvanc() {
   return (
-    <div>
+    <div className=''>
  <Hero/>
  <Whychoose/>
  <Processwork/>

@@ -148,7 +148,7 @@ export default function Footer() {
                     <div className="mx-auto px-16 pt-12 bottom-0">
                         <div className="grid md:grid-cols-2 sm:grid-cols-1 md:gap-10 lg:gap-12 md:lg-5 gap-1 py-5 text-white">
                             <div className="mb-6 md:mb-0 mt-6">
-                                <Link to="/" className="flex" onClick={scrollToTop}>
+                                <Link to="/" className="flex pt-10" onClick={scrollToTop}>
                                     <img
                                         src="/public/Web_Logo_BW Logo_Web Logo BW.png"
                                         className="h-20 me-4"

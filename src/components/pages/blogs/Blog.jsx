@@ -32,7 +32,7 @@ export default function Blog() {
   }
 
   return (
-    <div className="py-4 mt-5 lg:mb-96 sm:mb-16">
+    <div className="py-4 mt-5 lg:mb-96 sm:mb-16 mx-auto px-6 md:container">
       <div className="text-center">
       </div>
 
@@ -85,25 +85,32 @@ export default function Blog() {
           nextLabel={'Next'}
           breakLabel={'...'}
           pageCount={pageCount}
-          marginPagesDisplayed={2}
-          pageRangeDisplayed={3}
+          marginPagesDisplayed={1}
+          pageRangeDisplayed={window.innerWidth < 640 ? 1 : window.innerWidth < 1024 ? 2 : 3}  // Adjust based on screen size
           onPageChange={handlePageClick}
           onClick={scrollToTop}
-          containerClassName={'pagination flex space-x-2'}
-          activeClassName={'bg-primary text-white px-3 py-1 border border-primary rounded'}
+          containerClassName={
+            'pagination flex flex-wrap justify-center space-x-2 sm:space-x-4'
+          }
+          activeClassName={
+            'bg-primary text-white px-3 py-1 border border-primary rounded'
+          }
           pageClassName={
-            'border border-primary px-3 py-1 rounded cursor-pointer hover:bg-primary hover:text-white'
+            'border border-primary px-3 py-1 rounded cursor-pointer hover:bg-primary hover:text-white text-sm sm:text-base'
           }
           previousClassName={
-            'border border-primary px-3 py-1 rounded cursor-pointer hover:bg-primary hover:text-white'
+            'border border-primary px-3 py-1 rounded cursor-pointer hover:bg-primary hover:text-white text-sm sm:text-base'
           }
           nextClassName={
-            'border border-primary px-3 py-1 rounded cursor-pointer hover:bg-primary hover:text-white'
+            'border border-primary px-3 py-1 rounded cursor-pointer hover:bg-primary hover:text-white text-sm sm:text-base'
           }
-          breakClassName={'border border-primary px-3 py-1 rounded'}
+          breakClassName={
+            'border border-primary px-3 py-1 rounded text-sm sm:text-base'
+          }
         />
       </div>
-      
+
+
     </div>
   );
 }

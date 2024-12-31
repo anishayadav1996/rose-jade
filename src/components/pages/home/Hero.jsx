@@ -21,13 +21,13 @@ function Hero() {
                                     <p className='font-bold lg:leading-[65px] leading-15 md:leading-[40px]'>Unlock growth opportunities with fast and flexible business funding options tailored to your needs.</p>
                                 </h1>
                                 <p className='mb-6 leading-8 text-h5 text-justify'>At Rose Jade Inc, we specialize in Merchant Cash Advances (MCA), Line of Credit, and Equipment Financing, empowering small businesses to streamline operations and boost revenue. Our hassle-free solutions offer quick access to funds, ensuring you can seize new opportunities and achieve sustainable growth.</p>
-                                <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-12 my-5 text-center py-5 ">
+                                {/* <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-12 my-5 text-center py-5 ">
                                     <div className="bg-white text-gray-dark rounded-lg px-4 py-6">15+ <br />Year Experience</div>
                                     <div className='bg-white text-gray-dark rounded-lg px-4 py-6 '>75% <br /> Growth Rate</div>
                                     <div className='bg-white text-gray-dark rounded-lg px-4 py-6' >120 <br /> Active Currently</div>
-                                </div>
+                                </div> */}
                                 <div>
-                                   <Btn value={'Get Stated'} txtcolor={'white'} urllink={'contact-us'}/>
+                                   <Btn value={'Get Started'} txtcolor={'white'} urllink={'contact-us'}/>
                                 </div>
                             </div>
                         </div>

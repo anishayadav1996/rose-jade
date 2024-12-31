@@ -75,13 +75,13 @@ export default function Contact() {
           <p className='mb-6 leading-8 text-h5 text-justify text-white'>Ready to take your business to the next level? Contact Rose Jade Inc. today for flexible and transparent funding solutions tailored to your needs. Whether you’re looking for immediate funding through our Merchant Cash Advance, a flexible Line of Credit, or essential Equipment Financing, we’re here to help your business thrive.</p>
         </div>
       </div>
-      <div className="xl:container  px-6 lg:px-16 mx-auto xl:mb-[20rem] lg:mb-[20rem] ] mb-[30rem]  mt-5">
+      <div className="xl:container  sm:px-6 lg:px-16 mx-auto xl:mb-[20rem] lg:mb-[20rem] ] mb-[25rem]  mt-5">
         <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 lg:gap-12  ">
           <div className=''>
-            <p className='mb-6 leading-8 text-h5 text-justify'>
+            <p className='mb-6 leading-8 text-h5 text-justify px-6'>
               Our expert team is dedicated to guiding you every step of the way, ensuring you get the right financial solution to fuel your business growth. With a simple and straightforward process, we make accessing the funds you need fast and hassle-free.
             </p>
-            <ul className="mb-20 ">
+            <ul className="mb-20 px-6">
               <li className="flex ">
                 <div className="flex h-10 w-10 items-center justify-center rounded border border-secondary text-primary">
                   <i className="fa fa-map-marker text-h4" aria-hidden="true"></i>
@@ -119,7 +119,7 @@ export default function Contact() {
               </li>
             </ul>
           </div>
-          <div className=''>
+          <div className='px-6 '>
 
             <p className='mb-6 leading-6 text-h4 text-justify font-bold'>Ready to Get Started?</p>
             <form className="" id="contactForm" onSubmit={handleSubmit}>
@@ -176,9 +176,10 @@ export default function Contact() {
             {responseMessage && <p className="text-center text-secondary mt-4">{responseMessage}</p>}
           </div>
         </div>
-      <div className='grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 lg:gap-12'>
-        <div className='w-1/2 h-1/2'><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28471.6552069472!2d80.99921919148511!3d26.873110376400444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1734681336951!5m2!1sen!2sin" title="do it for me" className='w-[600px] h-[560px]' ></iframe></div>
-        <div className='text-justify'>
+        <div className='px-6 lg:px-16 mx-auto'>
+        <div className='grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 lg:gap-12 gap-6 py-10 '>
+        <div className='w-1/2 h-1/2'><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28471.6552069472!2d80.99921919148511!3d26.873110376400444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1734681336951!5m2!1sen!2sin" title="do it for me" className='md:w-[600px] md:h-[560px] w-400px w-300px' ></iframe></div>
+        <div className='text-justify px-6 mx-auto'>
           <p className='mb-3 leading-6 text-h4  font-bold'>How We Handle Your Inquiries</p>
           <p className='text-h5'>Once you submit the form, our team will assess the urgency of your request based on the information provided. You can expect a response within the following timeframes:</p>
           <ul>
@@ -202,6 +203,8 @@ export default function Contact() {
           </p>
         </div>
       </div>
+        </div>
+      
 
       </div>
 

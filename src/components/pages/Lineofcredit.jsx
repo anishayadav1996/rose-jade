@@ -9,7 +9,7 @@ import Howdoesabusiness from './lineofcredit/Howdoesabusiness'
 
 export default function Lineofcredit() {
   return (
-    <div>
+    <div className=''>
       <Hero/>
       <Whychoose/>
       <Benefits/>

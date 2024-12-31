@@ -43,20 +43,20 @@ export default function BlogIndividual() {
             {!blog && status === 'succeeded' && (
                 <p>No blog data available at the moment.</p>
             )}
-            <div className="xl:container mx-auto px-6 lg:px-16 px-6 lg:px-16 mx-auto xl:mb-[20rem] lg:mb-[20rem] ] mb-[30rem]  mt-5">
-                <div className='grid grid-cols-12 gap-12'>
-                    <div className='md:col-span-8 col-span-12 py-5 mb-5'>
+            <div className="md:container mx-auto px-6 lg:px-16 px-6 lg:px-16 mx-auto xl:mb-[20rem] lg:mb-[20rem] mb-[30rem]  mt-5">
+                <div className='grid grid-cols-12 md:gap-12 gap-4'>
+                    <div className='lg:col-span-8 col-span-12 py-5 mb-5'>
                         {blog && (
                             <div>
-                                <img src={blog?.blog_feature_image} alt="Featured Image" className="w-full h-96 object-cover rounded-lg" />
+                                <img src={blog?.blog_feature_image} alt="Featured Image" className="w-full sm:h-96 object-cover rounded-lg ml-auto" />
                                 <div className="flex items-center space-x-4 xl:space-x-48 text-sm font-medium py-3">
-                                <div className="flex items-center space-x-2">
+                                <div className="flex items-center sm:space-x-2 space-x-1">
                                 <i className="fa fa-file text-primary" aria-hidden="true"></i> <span>{blog?.category_name}</span>
                                 </div>
-                                <div className="flex items-center space-x-2">
+                                <div className="flex items-center sm:space-x-2 space-x-1">
                                     <i className="fa fa-calendar text-primary" aria-hidden="true"></i> <span>{blog?.formatted_date}</span>
                                     </div>
-                                    <div className="flex items-center space-x-2">
+                                    <div className="flex items-center sm:space-x-2 space-x-1">
                                     <i className="fa-solid fa-clock text-primary"></i> <span>Reading Time: {readingTime} minutes</span>
                                     </div>
                                 </div>
@@ -69,7 +69,7 @@ export default function BlogIndividual() {
                     </div>
                 </div>
                 <div className="grid grid-cols-12 mt-6">
-                    <div className="col-span-8">
+                    <div className="lg:col-span-8 col-span-12">
                         {blog && blog.blog_tag && (
                             <div className="flex flex-wrap gap-2 font-bold">
                                 {blog.blog_tag.split(',').map((tag, index) => (

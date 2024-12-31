@@ -28,7 +28,10 @@ export default function Howtoapply() {
                         </p>
                         <p className='text-justify  leading-6'>Once approved, you’ll receive a lump sum payout within 3-4 hours. Use the funds at your discretion, as needed.
                         </p>
-                        <Btn value={'Apply Now'} txtcolor={'white'} bgcolor={'primary'}/>
+                        <div className='text-center'>
+                    <Btn value={'Apply Now'} txtcolor={'white'} urllink={'/contact-us'}/>
+                    </div>
+                        
             
                     </div>
                 </div>

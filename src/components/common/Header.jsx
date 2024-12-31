@@ -5,8 +5,11 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false); // State for dropdown
   const [activeLink, setActiveLink] = useState("/");
+  const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
   const location = useLocation();
-  const dropdownRef = useRef(null);
+  // const dropdownRef = useRef(null);
+  const desktopDropdownRef = useRef(null);
+  const mobileDropdownRef = useRef(null);
 
   useEffect(() => {
     // Update active link based on current location
@@ -17,17 +20,24 @@ export default function Navbar() {
     const handleClickOutside = (event) => {
       if (
         isDropdownOpen &&
-        dropdownRef.current &&
-        !dropdownRef.current.contains(event.target)
+        desktopDropdownRef.current &&
+        !desktopDropdownRef.current.contains(event.target)
       ) {
         setIsDropdownOpen(false);
+      }
+      if (
+        isMobileDropdownOpen &&
+        mobileDropdownRef.current &&
+        !mobileDropdownRef.current.contains(event.target)
+      ) {
+        setIsMobileDropdownOpen(false);
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [isDropdownOpen]);
+  }, [isDropdownOpen, isMobileDropdownOpen]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -40,11 +50,15 @@ export default function Navbar() {
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
+  const toggleMobileDropdown = () => {
+    setIsMobileDropdownOpen(!isMobileDropdownOpen);
+  };
 
   const handleLinkClick = (path) => {
     setActiveLink(path);
     closeMenu();
     setIsDropdownOpen(false);
+    setIsMobileDropdownOpen(false);
   };
 
   const scrollToTop = () => {
@@ -125,7 +139,7 @@ export default function Navbar() {
               </Link>
 
               {/* Dropdown for Services */}
-              <div className="relative inline-block text-left" ref={dropdownRef}>
+              <div className="relative inline-block text-left" ref={desktopDropdownRef}>
                 <button
                   type="button"
                   onClick={toggleDropdown}
@@ -150,7 +164,7 @@ export default function Navbar() {
                 </button>
                 {isDropdownOpen && (
                   <div
-                    className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg "
+                    className="absolute right-0 z-10 mt-2 w-56 left-12 origin-top-right rounded-md bg-white shadow-lg "
                     role="menu"
                     aria-orientation="vertical"
                     aria-labelledby="menu-button"
@@ -191,18 +205,7 @@ export default function Navbar() {
                 )}
               </div>
 
-              <Link
-                to="/contact-us"
-                onClick={() => {
-                  handleLinkClick("/contact");
-                  scrollToTop();
-                }}
-                className={`rounded-md px-3 py-1 text-sm font-medium hover:text-secondary ${activeLink === "/contact" ? "border-b-2 border-primary" : ""
-                  }`}
-                aria-current="page"
-              >
-                Contact Us
-              </Link>
+             
               <Link
                 to="/blogs"
                 onClick={() => {
@@ -215,13 +218,25 @@ export default function Navbar() {
               >
                 Blogs
               </Link>
+              <Link
+                to="/contact-us"
+                onClick={() => {
+                  handleLinkClick("/contact");
+                  scrollToTop();
+                }}
+                className={`rounded-md px-3 py-1 text-sm font-medium hover:text-secondary ${activeLink === "/contact" ? "border-b-2 border-primary" : ""
+                  }`}
+                aria-current="page"
+              >
+                Contact Us
+              </Link>
             </div>
           </div>
         </div>
 
         {/* Mobile Logo */}
         <div className="mobile-logo lg:hidden sm:hidden">
-          <img className="h-16" src="/public/logo.png" alt="logo" />
+          <img className="h-16" src="/public/Mobile_Icon.jpg" alt="logo" />
         </div>
 
         {/* Mobile Menu */}
@@ -239,84 +254,94 @@ export default function Navbar() {
               Home
             </Link>
             <Link
-              to="/about"
+              to="/about-us"
               className="block rounded-md px-3 py-2 text-base font-medium text-black hover:text-secondary"
               onClick={closeMenu}
             >
-              About
+              About Us
+            </Link>
+            
+            <div className="relative inline-block text-left" ref={mobileDropdownRef}>
+                <button
+                  type="button"
+                  onClick={toggleMobileDropdown}
+                  className="inline-flex w-full justify-center gap-x-1.5 bg-white px-3 py-2 text-sm font-semibold hover:text-secondary"
+                  id="menu-button"
+                  aria-expanded={isMobileDropdownOpen}
+                  aria-haspopup="true"
+                >
+                  Services
+                  <svg
+                    className="-mr-1 size-5 "
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </button>
+                {isMobileDropdownOpen && (
+                  <div
+                    className="absolute right-0 z-10 mt-2 w-56 left-12 origin-top-right rounded-md bg-white shadow-lg "
+                    role="menu"
+                    aria-orientation="vertical"
+                    aria-labelledby="menu-button"
+                  >
+                    <div className="py-1" role="none">
+                      <Link
+                        to="/merchant-cash"
+                        className="block px-4 py-2 text-sm hover:text-secondary"
+                        onClick={() => {
+                          handleLinkClick("/merchant-cash");
+                          scrollToTop();
+                        }}
+                      >
+                        Merchant Cash Advances
+                      </Link>
+                      <Link
+                        to="/line-of-credit"
+                        className="block px-4 py-2 text-sm hover:text-secondary"
+                        onClick={() => {
+                          handleLinkClick("/line-of-credit");
+                          scrollToTop();
+                        }}
+                      >
+                        Lines of Credit
+                      </Link>
+                      <Link
+                        to="/equipment-financing"
+                        className="block px-4 py-2 text-sm hover:text-secondary"
+                        onClick={() => {
+                          handleLinkClick("/equipment-financing");
+                          scrollToTop();
+                        }}
+                      >
+                       Equipment Financing
+                      </Link>
+                    </div>
+                  </div>
+                )}
+              </div>
+
+         
+            <Link
+              to="/blogs"
+              className="block rounded-md px-3 py-2 text-base font-medium text-black hover:text-secondary"
+              onClick={closeMenu}
+            >
+              Blogs
             </Link>
             <Link
-              to="/contact"
+              to="/contact-us"
               className="block rounded-md px-3 py-2 text-base font-medium text-black hover:text-secondary"
               onClick={closeMenu}
             >
-              Contact
+              Contact Us
             </Link>
-            <div className="relative inline-block text-left">
-              <button
-                type="button"
-                onClick={toggleDropdown}
-                className="inline-flex w-full justify-center gap-x-1.5 bg-white px-3 py-2 text-sm font-semibold hover:text-secondary"
-                id="menu-button"
-                aria-expanded={isDropdownOpen}
-                aria-haspopup="true"
-              >
-                Services
-                <svg
-                  className="-mr-1 size-5 text-gray-400"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </button>
-              {isDropdownOpen && (
-                <div
-                  className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white "
-                  role="menu"
-                  aria-orientation=""
-                  aria-labelledby="menu-button"
-                >
-                  <div className="py-1" role="none">
-                    <Link
-                      to="/merchant-cash"
-                      className="block px-4 py-2 text-sm  hover:text-secondary"
-                      onClick={() => {
-                        handleLinkClick("/merchant-cash");
-                        scrollToTop();
-                      }}
-                    >
-                      Merchant Cash Advances
-                    </Link>
-                    <Link
-                      to="/line-of-credit"
-                      className="block px-4 py-2 text-sm hover:text-secondary"
-                      onClick={() => {
-                        handleLinkClick("/line-of-credit");
-                        scrollToTop();
-                      }}
-                    >
-                     Lines of Credit
-                    </Link>
-                    <Link
-                      to="/equipment-financing"
-                      className="block px-4 py-2 text-sm hover:text-secondary"
-                      onClick={() => {
-                        handleLinkClick("/equipment-financing");
-                        scrollToTop();
-                      }}
-                    >
-                     Equipment Financing
-                    </Link>
-                  </div>
-                </div>
-              )}
-            </div>
           </div>
         </div>
       </div>

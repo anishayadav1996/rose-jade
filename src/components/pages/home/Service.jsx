@@ -56,7 +56,7 @@ export default function Service() {
                 Get the tools to power your business growth.
               </p>
 
-              <Btn value={"Read More"} txtcolor={"primary"} urllink={"equipment-financing"}/>
+              <Btn value={"Read More"} txtcolor={"secondary"} urllink={"equipment-financing"}/>
             </div>
           </div>
         </div>
