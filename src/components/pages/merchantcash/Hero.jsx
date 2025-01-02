@@ -5,7 +5,7 @@ export default function Hero() {
     <>
        <div className='text-white bg-secondary sm:px-6 py-20 px-6 mx-auto'>
                <div className="xl:container   lg:px-16 mx-auto">
-               <div className="mx-auto grid xl:grid-cols-2 grid-cols-1 gap-4 xl:gap-2">
+               <div className="mx-auto grid lg:grid-cols-2 grid-cols-1 gap-4 xl:gap-2">
                     <div className=" flex items-center">
                         <div className=''>
                           <p className='sm:text-h1 leading-[64px] font-bold text-h2'>Fuel Your Business Growth with Business Cash Advance at Rose Jade Inc.</p>

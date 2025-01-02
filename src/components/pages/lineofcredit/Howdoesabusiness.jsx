@@ -5,7 +5,7 @@ export default function Howdoesabusiness() {
     <>
        <div className=''>
        <div className="xl:container lg:px-16  mx-auto pt-5 px-6 ">
-        <div className="mx-auto grid xl:grid-cols-2 md:grid-cols-1 gap-12 ">
+        <div className="mx-auto grid lg:grid-cols-2 md:grid-cols-1 gap-12 ">
         <div className="px-6">
             <img
               className="rounded-lg w-auto h-full  md:w-full object-cover object-top"
@@ -14,7 +14,7 @@ export default function Howdoesabusiness() {
             />
           </div>
           <div className="flex flex-col space-y-5 px-6">
-            <h2 className="capitalize sm:text-h4 font-semibold text-primary text-h5 mb-3 lg:leading-[40px] leading-[50px]">
+            <h2 className="capitalize sm:text-h3 font-bold text-primary text-h5 mb-3 lg:leading-[40px] leading-[50px]">
             How Does a Business Line of Credit Work?
             </h2>
             <p className='text-justify text-h5'>Understanding how a line of credit functions is key to maximizing its benefits for your business. Here’s how it works:

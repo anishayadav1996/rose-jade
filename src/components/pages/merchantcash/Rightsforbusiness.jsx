@@ -4,7 +4,7 @@ export default function Rightsforbusiness() {
   return (
     <div className=''>
       <div className="xl:container lg:px-16  mx-auto pt-5 px-6 ">
-        <div className="mx-auto grid xl:grid-cols-2 md:grid-cols-1 gap-12 ">
+        <div className="mx-auto grid lg:grid-cols-2 md:grid-cols-1 gap-12 ">
         <div className="px-6">
             <img
               className="rounded-lg w-auto h-full  md:w-full object-cover object-top"

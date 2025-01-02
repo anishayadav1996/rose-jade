@@ -50,10 +50,10 @@ export default function Contact() {
         headers: {
           "Content-Type": "application/json",
         },
-      
+
         body: JSON.stringify(formData),
       });
-      
+
       const result = await response.json();
       console.log(result)
       if (result.success) {
@@ -69,13 +69,13 @@ export default function Contact() {
   };
   return (
     <>
-      <div className='py-5 bg-secondary'>
+      <div className='py-5 bg-secondary bg-opacity-85'>
         <div className="container mx-auto lg:px-16 px-6">
-          <p className='text-center text-primary font-bold capitalize text-h1'> get in touch</p>
+          <p className='text-center  font-bold capitalize text-h1'> get in touch</p>
           <p className='mb-6 leading-8 text-h5 text-justify text-white'>Ready to take your business to the next level? Contact Rose Jade Inc. today for flexible and transparent funding solutions tailored to your needs. Whether you’re looking for immediate funding through our Merchant Cash Advance, a flexible Line of Credit, or essential Equipment Financing, we’re here to help your business thrive.</p>
         </div>
       </div>
-      <div className="xl:container  sm:px-6 lg:px-16 mx-auto xl:mb-[20rem] lg:mb-[20rem] ] mb-[25rem]  mt-5">
+      <div className="xl:container  sm:px-6 lg:px-16 mx-auto xl:mb-[20rem] lg:mb-[15rem] ] mb-[20rem]  mt-5">
         <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 lg:gap-12  ">
           <div className=''>
             <p className='mb-6 leading-8 text-h5 text-justify px-6'>
@@ -87,10 +87,17 @@ export default function Contact() {
                   <i className="fa fa-map-marker text-h4" aria-hidden="true"></i>
                 </div>
                 <div className="ml-4 mb-4">
-                  <h3 className="text-h5 font-medium leading-6 text-gray-dark">Our Address
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=86A+N+Mada+Ave,+Staten+Island,+NY+10310"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-dark text-h5 text-justify hover:text-primary"
+                  >
+                  <h3 className="text-h5 font-bold leading-6">Our Address
                   </h3>
-                  <p className="text-gray-dark text-h5 text-justify">86A N Mada Ave, Staten Island,</p>
-                  <p className="text-gray-dark text-h5 text-justify">NY 10310, USA</p>
+                
+                    86A N Mada Ave, Staten Island, NY 10310, USA
+                  </a>
                 </div>
               </li>
               <li className="flex">
@@ -98,7 +105,7 @@ export default function Contact() {
                   <i className="fa fa-phone text-h4" aria-hidden="true"></i>
                 </div>
                 <div className="ml-4 mb-4">
-                  <h3 className="mb-2 text-h5 font-medium leading-6 text-gray-dark">Contact
+                  <h3 className="mb-2 text-h5 font-bold leading-6">Contact
                   </h3>
                   <p className="text-gray-dark  text-h5 text-justify">Phone:  (555) 123-4567</p>
                   <p className="text-gray-dark  text-h5 text-justify">E-Mail:  info@rosejadeinc.com</p>
@@ -110,7 +117,7 @@ export default function Contact() {
                   <i class="fa-solid fa-clock text-h4"></i>
                 </div>
                 <div className="ml-4 mb-4">
-                  <h3 className="mb-2 text-h5 font-medium leading-6 text-gray-dark">Working
+                  <h3 className="mb-2 text-h5 font-bold leading-6">Working
                     hours</h3>
                   <p className="text-gray-dark  text-h5 text-justify">Monday - Friday: 09:00 - 17:00 </p>
                   <p className="text-gray-dark text-h5 text-justify">Saturday &amp; Sunday: Not Available (Appointments only)
@@ -177,34 +184,34 @@ export default function Contact() {
           </div>
         </div>
         <div className='px-6 lg:px-16 mx-auto'>
-        <div className='grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 lg:gap-12 gap-6 py-10 '>
-        <div className='w-1/2 h-1/2'><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28471.6552069472!2d80.99921919148511!3d26.873110376400444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1734681336951!5m2!1sen!2sin" title="do it for me" className='md:w-[600px] md:h-[560px] w-400px w-300px' ></iframe></div>
-        <div className='text-justify px-6 mx-auto'>
-          <p className='mb-3 leading-6 text-h4  font-bold'>How We Handle Your Inquiries</p>
-          <p className='text-h5'>Once you submit the form, our team will assess the urgency of your request based on the information provided. You can expect a response within the following timeframes:</p>
-          <ul>
-            <li className='font-bold py-2'>Top Priority
-            </li>
-           <span className='text-p'>	•	Funding requirements for small and medium-sized businesses: </span>
-           <li className='font-bold py-2'>Response within 2 working hours.</li>
-           <span className='font-semibold'>	Medium Priority</span>
-           <li className='text-p px-3 pt-1'>•	Existing customer inquiries regarding repayment and other queries.</li>
-           <li className='text-p px-3 pt-1'>•	Partnership inquiries from ISOs and other brokers.</li>
-           <li className='text-p px-3 pt-1'>•	Career-related questions from job applicants.</li>
-          </ul>
-          <h3 className='font-bold mt-7'>Response within 4 to 24 working hours.</h3>
-          <ul><li className='font-semibold px-3'>	•	Lower Priority</li>
-            <span className='text-p px-6'>	•	General questions or inquiries from Marketing and PR teams.</span>
-            <li className='font-semibold px-3'>	•	No Response</li>
-            <span className='text-p px-6'>•	Spam and fraudulent inquiries will be disregarded. (We kindly request that you use this form responsibly.)</span>
-          </ul>
-          <p className='text-h5 mt-3'>We appreciate your understanding and look forward to assisting you!</p>
-          <p className='text-h5 font-semibold pt-1'>Your success story begins here—contact Rose Jade Inc. now and unlock your business’s true potential!
-          </p>
+          <div className='grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 md:gap-12 gap-6 py-10 '>
+            <div className='' ><img className='rounded-lg w-full h-full md:w-full object-cover' src='src/assets/img/contact.jpg' alt='contact-img'/></div>
+            <div className='text-justify px-6 mx-auto'>
+              <p className='mb-3 leading-6 text-h4  font-bold'>How We Handle Your Inquiries</p>
+              <p className='text-h5'>Once you submit the form, our team will assess the urgency of your request based on the information provided. You can expect a response within the following timeframes:</p>
+              <ul>
+                <li className='font-bold py-2'>Top Priority
+                </li>
+                <span className='text-p'>	•	Funding requirements for small and medium-sized businesses: </span>
+                <li className='font-bold py-2'>Response within 2 working hours.</li>
+                <span className='font-semibold'>	Medium Priority</span>
+                <li className='text-p px-3 pt-1'>•	Existing customer inquiries regarding repayment and other queries.</li>
+                <li className='text-p px-3 pt-1'>•	Partnership inquiries from ISOs and other brokers.</li>
+                <li className='text-p px-3 pt-1'>•	Career-related questions from job applicants.</li>
+              </ul>
+              <h3 className='font-bold mt-7'>Response within 4 to 24 working hours.</h3>
+              <ul><li className='font-semibold px-3'>	•	Lower Priority</li>
+                <span className='text-p px-6'>	•	General questions or inquiries from Marketing and PR teams.</span>
+                <li className='font-semibold px-3'>	•	No Response</li>
+                <span className='text-p px-6'>•	Spam and fraudulent inquiries will be disregarded. (We kindly request that you use this form responsibly.)</span>
+              </ul>
+              <p className='text-h5 mt-3'>We appreciate your understanding and look forward to assisting you!</p>
+              <p className='text-h5 font-semibold pt-1'>Your success story begins here—contact Rose Jade Inc. now and unlock your business’s true potential!
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-        </div>
-      
+
 
       </div>
 

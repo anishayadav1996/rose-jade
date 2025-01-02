@@ -9,16 +9,16 @@ export default function Faq({ data }) {
 
   return (
     <div className="bg-white">
-      <div className="xl:container px-6 lg:px-16 mx-auto xl:mb-[20rem] lg:mb-[28rem] md:mb-[25rem] mb-[30rem] py-15">
-        <h2 className="font-bold py-6 text-h3 px-6">Frequently Asked Questions</h2>
-        <div className="space-y-4 pb-8">
+      <div className="xl:container px-6 lg:px-16 mx-auto xl:mb-[20rem] lg:mb-[15rem] md:mb-[15rem] mb-[20rem] py-15">
+        <h2 className="font-bold py-6 text-h3 px-6 text-center text-primary">Frequently Asked Questions</h2>
+        <div className="space-y-4 pb-8 text-center text-justify">
           {data.map((item, index) => (
             <div key={index} className="border-b-2 border-gray rounded-md">
               <button
-                className="flex items-center justify-between w-full px-5 py-4 text-left font-medium text-gray-dark focus:outline-none"
+                className="flex justify-between items-center w-full px-5 py-4  font-semibold focus:outline-none"
                 onClick={() => toggleAccordion(index)}
               >
-                <span>{item.question}</span>
+                <span className="ml-15">{item.question}</span>
                 <svg
                   className={`w-5 h-5 transform transition-transform duration-300 ${
                     openItem === index ? "rotate-180" : ""

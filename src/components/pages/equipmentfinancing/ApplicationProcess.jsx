@@ -23,7 +23,7 @@ export default function ApplicationProcess() {
         <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4 my-5 text-justify py-5 sm:px-6">
             <div className=" bg-white rounded-lg overflow-hidden shadow-lg">
                 <div className="px-6 py-4">
-                    <p className="font-semibold text-h5 text-primary leading-6">Submit Your Application</p>
+                    <p className="font-bold text-h5 text-secondary-light text-center leading-6">Submit Your Application</p>
                     <span className='text-gray-dark leading-8 text-6'>Complete a simple online form with basic business details and equipment information.
                     </span>
 
@@ -31,7 +31,7 @@ export default function ApplicationProcess() {
             </div>
             <div className="  bg-white rounded-lg overflow-hidden shadow-lg">
                 <div className="px-6 py-4">
-                    <p className="font-semibold text-h5 text-primary leading-6">Quick Approval</p>
+                    <p className="font-semibold text-h5 text-center text-secondary-light leading-6">Quick Approval</p>
                     <span className='text-gray-dark leading-8 text-6'>Get a tailored financing decision within 3-4 hours based on your business needs.
                     </span>
 
@@ -39,14 +39,14 @@ export default function ApplicationProcess() {
             </div>
             <div className=" bg-white rounded-lg overflow-hidden shadow-lg">
                 <div className="px-6 py-4">
-                    <p className="font-semibold text-h5 text-primary leading-6">Choose Your Terms</p>
+                    <p className="font-semibold text-h5 text-center text-secondary-light leading-6">Choose Your Terms</p>
                     <span className='text-gray-dark leading-8 text-6'>Select a flexible repayment plan that suits your cash flow, with terms from 12 to 60 months.
                     </span>
                 </div>
             </div>
             <div className=" bg-white rounded-lg overflow-hidden shadow-lg">
                 <div className="px-6 py-4">
-                    <p className="font-semibold text-h5 text-primary leading-6">Acquire Your Equipment</p>
+                    <p className="font-semibold text-h5 text-center text-secondary-light leading-6">Acquire Your Equipment</p>
                     <span className='text-gray-dark leading-8 text-6'>Once approved, use the funds to purchase or lease the equipment you need to grow your business.
                     </span>
                 </div>

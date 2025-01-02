@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Footer() {
     const [isFormOpen, setIsFormOpen] = useState(false);
+    const location = useLocation();
 
     const [formData, setFormData] = useState({
         name: "",
@@ -34,7 +35,7 @@ export default function Footer() {
             setIsFormOpen(true);
         }, 3000);
         return () => clearTimeout(timer);
-    }, []);
+    }, [location]);
 
     const scrollToTop = () => {
         window.scrollTo({
@@ -212,15 +213,15 @@ export default function Footer() {
                         </div>
                     </div>
                 </footer>
-                <div className="absolute xl:bottom-[85%] left-1 right-1 md:left-[13%] md:right-[8%] lg:bottom-[80%] md:bottom-[86%] bottom-[90%] px-6">
-                    <div className="rounded lg:flex items-center sm:gap-12 bg-primary text-white px-6 py-4 text-justify lg:px-16">
+                <div className="absolute xl:bottom-[85%] left-1 right-1 md:left-[8%] md:right-[8%] lg:bottom-[80%] md:bottom-[86%] bottom-[90%] px-6">
+                    <div className="rounded lg:flex items-center sm:gap-2 bg-primary text-white px-6 py-4  lg:px-16">
                         <div>
-                            <h1 className="capitalize font-bold md:text-h3 lg:text-h3 xl:leading-[45px] text-h4 md:py-10">
+                            <h1 className="capitalize font-semibold md:text-h4 lg:text-h4 xl:leading-[45px] text-h4 pb-7">
                                 Contact Us for a customized financial plan
                             </h1>
                         </div>
                         <div className="pt-5">
-                            <p className="lg:text-h5 lg:leading-8 sm:leading-6 md:leading-2 sm:text-h5">
+                            <p className="lg:text-h5 lg:leading-8 sm:leading-6 md:leading-2 sm:text-h5 text-justify">
                                 Be the first to know about the latest financial trends, exclusive
                                 funding opportunities, and expert tips to grow your business.
                             </p>
@@ -233,9 +234,9 @@ export default function Footer() {
                                     />
                                     <button
                                         type="submit"
-                                        className="bg-secondary text-white text-h5 px-2 py-2 md:w-48 rounded-full sm:rounded-r-full sm:rounded-none hover:border border-white transition duration-300 w-full sm:w-auto"
+                                        className="bg-secondary text-white text-h5 px-2 py-2 min-w-[150px] rounded-full sm:rounded-r-full sm:rounded-none hover:border border-white transition duration-300 w-full sm:w-auto"
                                     >
-                                        Subscription
+                                        Subscribe Now
                                     </button>
                                 </form>
                             </div>

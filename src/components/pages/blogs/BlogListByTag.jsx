@@ -47,7 +47,7 @@ function BlogListByTag({ tag, currentBlogId }) {
              </div>
            </div>
            <div className="py-4">
-             <p className="text-gray-dark text-h5 font-semibold text-justify leading-6">
+             <p className=" text-h5 font-semibold text-justify leading-6">
                {blog.blog_title || 'No title available'}
              </p>
              <p className="text-gray-dark text-h5 text-justify leading-6 pt-5">

@@ -5,7 +5,7 @@ import Sidebar from './blogs/Sidebar'
 export default function Blogs() {
   return (
     <>
-      <div className='md:container  sm:px-6 lg:px-16 mx-auto xl:mb-[20rem] lg:mb-[20rem] ] mb-[25rem]  mt-5'>   
+      <div className='xl:container  sm:px-6 lg:px-16 mx-auto xl:mb-[20rem] lg:mb-[15rem] ] mb-[20rem]  mt-5'>   
         <div className='grid grid-cols-12  md:gap-12 gap-4'>
             <div className='lg:col-span-8 col-span-12 '>
               <Blog/>

@@ -32,7 +32,7 @@ export default function Blog() {
   }
 
   return (
-    <div className="py-4 mt-5 lg:mb-96 sm:mb-16 mx-auto px-6 md:container">
+    <div className="py-4 mt-5 ">
       <div className="text-center">
       </div>
 
@@ -64,7 +64,7 @@ export default function Blog() {
                 </div>
               </div>
               <div className="py-4">
-                <p className="text-gray-dark text-h5 font-semibold text-justify leading-6">
+                <p className=" text-h5 font-semibold text-justify leading-6">
                   {item.blog_title || 'No title available'}
                 </p>
                 <p className="text-gray-dark text-h5 text-justify leading-6 pt-5">

@@ -60,7 +60,7 @@ export default function BlogIndividual() {
                                     <i className="fa-solid fa-clock text-primary"></i> <span>Reading Time: {readingTime} minutes</span>
                                     </div>
                                 </div>
-                                <div className="mb-4" dangerouslySetInnerHTML={{ __html: blog?.blog_content }}></div>
+                                <div className="mb-4 text-h5" dangerouslySetInnerHTML={{ __html: blog?.blog_content }}></div>
                             </div>
                         )}
                     </div>

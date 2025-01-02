@@ -16,7 +16,7 @@ export default function Processwork() {
                 <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4 my-5 text-justify py-5 sm:px-6">
                     <div className=" bg-white rounded-lg overflow-hidden shadow-lg">
                         <div className="px-6 py-4">
-                            <p className="font-semibold text-h5 text-primary leading-6">Submit Your Application</p>
+                            <p className="font-bold text-h5 text-secondary-light text-center leading-6">Submit Your Application</p>
                             <span className='text-gray-dark leading-8 text-6'>Provide basic business details and financial information through our simple online form.
                             </span>
 
@@ -24,7 +24,7 @@ export default function Processwork() {
                     </div>
                     <div className="  bg-white rounded-lg overflow-hidden shadow-lg">
                         <div className="px-6 py-4">
-                            <p className="font-semibold text-h5 text-primary leading-6">Quick Approval</p>
+                            <p className="font-bold text-h5 text-secondary-light text-center leading-6">Quick Approval</p>
                             <span className='text-gray-dark leading-8 text-6'>Get approved within 3-4 hours after our team reviews your application.
                             </span>
 
@@ -32,14 +32,14 @@ export default function Processwork() {
                     </div>
                     <div className=" bg-white rounded-lg overflow-hidden shadow-lg">
                         <div className="px-6 py-4">
-                            <p className="font-semibold text-h5 text-primary leading-6">Receive Your Funds</p>
+                            <p className="font-bold text-h5 text-secondary-light text-center leading-6">Receive Your Funds</p>
                             <span className='text-gray-dark leading-8 text-6'>Access a lump-sum advance customized to your business’s cash flow needs.
                             </span>
                         </div>
                     </div>
                     <div className=" bg-white rounded-lg overflow-hidden shadow-lg">
                         <div className="px-6 py-4">
-                            <p className="font-semibold text-h5 text-primary leading-6">Repayment Made Simple</p>
+                            <p className="font-bold text-h5 text-secondary-light text-center leading-6">Repayment Made Simple</p>
                             <span className='text-gray-dark leading-8 text-6'>Repay the advance through a percentage of your future sales, ensuring manageable payments aligned with your revenue
                             </span>
                         </div>

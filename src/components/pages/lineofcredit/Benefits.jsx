@@ -4,7 +4,7 @@ export default function Benefits() {
   return (
     <>
        <div className='sm:px-6 py-20 px-6 mx-auto xl:container '>
-            <div className="mx-auto grid xl:grid-cols-2 md:grid-cols-1 gap-12 ">
+            <div className="mx-auto grid lg:grid-cols-2 md:grid-cols-1 gap-12 ">
                 <div className="flex flex-col space-y-5 px-6 lg:px-16">
                     <h2 className="capitalize sm:text-h2 font-bold  text-h3 text-primary mb-3 lg:leading-[50px] leading-[50px]">Benefits of a Line of Credit at Rose Jade Inc.
                     </h2>
